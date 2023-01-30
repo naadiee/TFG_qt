@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'TradingApp2EYpDdJ.ui'
+## Form generated from reading UI file 'TradingApp2MyAbFV.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -65,7 +65,7 @@ class FormLoginView(object):
         self.label_3.setAlignment(Qt.AlignCenter)
         self.password = QLineEdit(self.frame)
         self.password.setObjectName(u"password")
-        self.password.setGeometry(QRect(310, 350, 231, 31))
+        self.password.setGeometry(QRect(320, 350, 231, 31))
         palette = QPalette()
         brush = QBrush(QColor(255, 255, 255, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -109,7 +109,7 @@ class FormLoginView(object):
         self.password.setAlignment(Qt.AlignCenter)
         self.login_bt = QPushButton(self.frame)
         self.login_bt.setObjectName(u"login_bt")
-        self.login_bt.setGeometry(QRect(310, 420, 111, 41))
+        self.login_bt.setGeometry(QRect(320, 420, 111, 41))
         palette1 = QPalette()
         brush5 = QBrush(QColor(33, 142, 36, 255))
         brush5.setStyle(Qt.SolidPattern)
@@ -146,7 +146,7 @@ class FormLoginView(object):
 "")
         self.progressBar = QProgressBar(self.frame)
         self.progressBar.setObjectName(u"progressBar")
-        self.progressBar.setGeometry(QRect(150, 480, 551, 23))
+        self.progressBar.setGeometry(QRect(170, 480, 551, 23))
         self.progressBar.setStyleSheet(u"QProgressBar{\n"
 "	border-radius:25px; \n"
 "	border: 0px;\n"
@@ -161,7 +161,7 @@ class FormLoginView(object):
         self.progressBar.setTextDirection(QProgressBar.TopToBottom)
         self.salir_bt = QPushButton(self.frame)
         self.salir_bt.setObjectName(u"salir_bt")
-        self.salir_bt.setGeometry(QRect(380, 560, 101, 41))
+        self.salir_bt.setGeometry(QRect(400, 550, 101, 41))
         palette2 = QPalette()
         brush6 = QBrush(QColor(200, 1, 17, 255))
         brush6.setStyle(Qt.SolidPattern)
@@ -195,7 +195,7 @@ class FormLoginView(object):
 "")
         self.usuario = QLineEdit(self.frame)
         self.usuario.setObjectName(u"usuario")
-        self.usuario.setGeometry(QRect(310, 250, 231, 31))
+        self.usuario.setGeometry(QRect(320, 250, 231, 31))
         palette3 = QPalette()
         palette3.setBrush(QPalette.Active, QPalette.Button, brush)
         palette3.setBrush(QPalette.Active, QPalette.Text, brush1)
@@ -226,7 +226,7 @@ class FormLoginView(object):
         self.usuario.setAlignment(Qt.AlignCenter)
         self.usuario_incorrecto = QLabel(self.frame)
         self.usuario_incorrecto.setObjectName(u"usuario_incorrecto")
-        self.usuario_incorrecto.setGeometry(QRect(280, 286, 221, 20))
+        self.usuario_incorrecto.setGeometry(QRect(320, 286, 221, 20))
         palette4 = QPalette()
         brush7 = QBrush(QColor(237, 0, 17, 255))
         brush7.setStyle(Qt.SolidPattern)
@@ -257,7 +257,7 @@ class FormLoginView(object):
         self.usuario_incorrecto.setAlignment(Qt.AlignCenter)
         self.contrasena_incorrecta = QLabel(self.frame)
         self.contrasena_incorrecta.setObjectName(u"contrasena_incorrecta")
-        self.contrasena_incorrecta.setGeometry(QRect(290, 390, 221, 20))
+        self.contrasena_incorrecta.setGeometry(QRect(330, 390, 221, 20))
         palette5 = QPalette()
         palette5.setBrush(QPalette.Active, QPalette.WindowText, brush7)
         palette5.setBrush(QPalette.Active, QPalette.Button, brush8)
@@ -278,12 +278,12 @@ class FormLoginView(object):
         self.contrasena_incorrecta.setAlignment(Qt.AlignCenter)
         self.cargar_label = QLabel(self.frame)
         self.cargar_label.setObjectName(u"cargar_label")
-        self.cargar_label.setGeometry(QRect(370, 520, 71, 16))
+        self.cargar_label.setGeometry(QRect(410, 520, 71, 16))
         self.cargar_label.setStyleSheet(u"\n"
 "border:Now")
         self.registra_bt = QPushButton(self.frame)
         self.registra_bt.setObjectName(u"registra_bt")
-        self.registra_bt.setGeometry(QRect(430, 420, 111, 41))
+        self.registra_bt.setGeometry(QRect(450, 420, 111, 41))
         palette6 = QPalette()
         brush9 = QBrush(QColor(11, 69, 16, 255))
         brush9.setStyle(Qt.SolidPattern)

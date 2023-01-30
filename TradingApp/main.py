@@ -1,9 +1,12 @@
 from forms.login.form_login import FormLogin
-from PyQt5 import QtCore, QtGui, QtWidgets
-from db.db_dao import DB_DAO
+from PyQt5 import QtWidgets
 
-dao = DB_DAO()
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    mi_app = FormLogin()
+    mi_app.show()
+    sys.exit(app.exec_())
 
-dao.registrarUsuario(["pedro", "1234"])
 
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_registrarlzjoBY.ui'
+## Form generated from reading UI file 'ui_registrarcjvReL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -218,7 +218,7 @@ class FormRegisterView(object):
 "")
         self.passDiferente_incorrecto = QLabel(self.frame)
         self.passDiferente_incorrecto.setObjectName(u"passDiferente_incorrecto")
-        self.passDiferente_incorrecto.setGeometry(QRect(280, 480, 221, 20))
+        self.passDiferente_incorrecto.setGeometry(QRect(290, 480, 221, 20))
         palette4 = QPalette()
         brush6 = QBrush(QColor(237, 0, 17, 255))
         brush6.setStyle(Qt.SolidPattern)
@@ -263,9 +263,9 @@ class FormRegisterView(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.usuario_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese su usuario o correo", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
-        self.password_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese su contrase\u00f1a", None))
+        self.password_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Repita su contrase\u00f1a", None))
-        self.passwordConfir_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese su contrase\u00f1a", None))
+        self.passwordConfir_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Confirmaci\u00f3n", None))
         self.registrar_bt.setText(QCoreApplication.translate("MainWindow", u"registrar", None))
         self.passDiferente_incorrecto.setText("")
     # retranslateUi
