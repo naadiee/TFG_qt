@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_registrarcjvReL.ui'
+## Form generated from reading UI file 'ui_registrarTBupOP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class FormRegisterView(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(789, 632)
+        MainWindow.resize(792, 638)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -27,8 +27,7 @@ class FormRegisterView(object):
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
         self.frame.setStyleSheet(u"background-color: rgb(114, 205, 113);\n"
-"border-radius:20px;\n"
-"border:1px solid #00007f;\n"
+"border-radius:10px;\n"
 "\n"
 "")
         self.frame.setFrameShape(QFrame.StyledPanel)
@@ -247,6 +246,23 @@ class FormRegisterView(object):
         self.passDiferente_incorrecto.setStyleSheet(u"font: 75 11pt \"Arial\";\n"
 "border:Noe")
         self.passDiferente_incorrecto.setAlignment(Qt.AlignCenter)
+        self.back_bt = QPushButton(self.frame)
+        self.back_bt.setObjectName(u"back_bt")
+        self.back_bt.setGeometry(QRect(30, 30, 41, 35))
+        self.back_bt.setMaximumSize(QSize(45, 35))
+        self.back_bt.setStyleSheet(u"QPushButton:hover{\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(84, 153, 83);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	\n"
+"	border-radius:5px;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u"img/atras.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.back_bt.setIcon(icon)
+        self.back_bt.setIconSize(QSize(30, 30))
 
         self.verticalLayout.addWidget(self.frame)
 
@@ -259,6 +275,9 @@ class FormRegisterView(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+#if QT_CONFIG(statustip)
+        self.frame.setStatusTip(QCoreApplication.translate("MainWindow", u"atras", None))
+#endif // QT_CONFIG(statustip)
         self.label.setText("")
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.usuario_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese su usuario o correo", None))
@@ -268,5 +287,6 @@ class FormRegisterView(object):
         self.passwordConfir_rgs.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Confirmaci\u00f3n", None))
         self.registrar_bt.setText(QCoreApplication.translate("MainWindow", u"registrar", None))
         self.passDiferente_incorrecto.setText("")
+        self.back_bt.setText("")
     # retranslateUi
 

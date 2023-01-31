@@ -12,6 +12,11 @@ class FormRegister(FormRegisterView, QMainWindow):
         self.ventana = FormRegisterView()
         self.ventana.setupUi(self)
         self.ventana.registrar_bt.clicked.connect(self.register)
+        self.ventana.back_bt.clicked.connect(self.back)
+
+
+    def back(self):
+        self.hide()
 
     def register(self):
         if self.isConfirmationPassword():

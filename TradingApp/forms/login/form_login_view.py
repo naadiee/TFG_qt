@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'TradingApp2MyAbFV.ui'
+## Form generated from reading UI file 'TradingApp2ldIaED.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class FormLoginView(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(858, 633)
+        MainWindow.resize(790, 633)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -28,7 +28,7 @@ class FormLoginView(object):
         self.frame.setObjectName(u"frame")
         self.frame.setStyleSheet(u"background-color: rgb(77, 125, 238);\n"
 "\n"
-"border-radius:20px;\n"
+"border-radius:10px;\n"
 "border:1px solid #00007f;\n"
 "\n"
 "")
@@ -36,7 +36,7 @@ class FormLoginView(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.label = QLabel(self.frame)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(350, 30, 161, 141))
+        self.label.setGeometry(QRect(310, 30, 161, 141))
         self.label.setStyleSheet(u"border:Noe")
         self.label.setFrameShadow(QFrame.Plain)
         self.label.setPixmap(QPixmap(u"img/logo2.png"))
@@ -45,7 +45,7 @@ class FormLoginView(object):
         self.label.setIndent(0)
         self.label_2 = QLabel(self.frame)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(340, 180, 181, 61))
+        self.label_2.setGeometry(QRect(300, 180, 181, 61))
         font = QFont()
         font.setFamily(u"Arial")
         font.setPointSize(24)
@@ -58,14 +58,14 @@ class FormLoginView(object):
         self.label_2.setAlignment(Qt.AlignCenter)
         self.label_3 = QLabel(self.frame)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(340, 300, 181, 51))
+        self.label_3.setGeometry(QRect(300, 300, 181, 51))
         self.label_3.setFont(font)
         self.label_3.setStyleSheet(u"font: 75 24pt \"Arial\";\n"
 "border:Now")
         self.label_3.setAlignment(Qt.AlignCenter)
         self.password = QLineEdit(self.frame)
         self.password.setObjectName(u"password")
-        self.password.setGeometry(QRect(320, 350, 231, 31))
+        self.password.setGeometry(QRect(280, 350, 231, 31))
         palette = QPalette()
         brush = QBrush(QColor(255, 255, 255, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -109,7 +109,7 @@ class FormLoginView(object):
         self.password.setAlignment(Qt.AlignCenter)
         self.login_bt = QPushButton(self.frame)
         self.login_bt.setObjectName(u"login_bt")
-        self.login_bt.setGeometry(QRect(320, 420, 111, 41))
+        self.login_bt.setGeometry(QRect(290, 420, 101, 41))
         palette1 = QPalette()
         brush5 = QBrush(QColor(33, 142, 36, 255))
         brush5.setStyle(Qt.SolidPattern)
@@ -146,7 +146,7 @@ class FormLoginView(object):
 "")
         self.progressBar = QProgressBar(self.frame)
         self.progressBar.setObjectName(u"progressBar")
-        self.progressBar.setGeometry(QRect(170, 480, 551, 23))
+        self.progressBar.setGeometry(QRect(130, 480, 551, 23))
         self.progressBar.setStyleSheet(u"QProgressBar{\n"
 "	border-radius:25px; \n"
 "	border: 0px;\n"
@@ -161,7 +161,7 @@ class FormLoginView(object):
         self.progressBar.setTextDirection(QProgressBar.TopToBottom)
         self.salir_bt = QPushButton(self.frame)
         self.salir_bt.setObjectName(u"salir_bt")
-        self.salir_bt.setGeometry(QRect(400, 550, 101, 41))
+        self.salir_bt.setGeometry(QRect(360, 550, 101, 41))
         palette2 = QPalette()
         brush6 = QBrush(QColor(200, 1, 17, 255))
         brush6.setStyle(Qt.SolidPattern)
@@ -195,7 +195,7 @@ class FormLoginView(object):
 "")
         self.usuario = QLineEdit(self.frame)
         self.usuario.setObjectName(u"usuario")
-        self.usuario.setGeometry(QRect(320, 250, 231, 31))
+        self.usuario.setGeometry(QRect(280, 250, 231, 31))
         palette3 = QPalette()
         palette3.setBrush(QPalette.Active, QPalette.Button, brush)
         palette3.setBrush(QPalette.Active, QPalette.Text, brush1)
@@ -283,7 +283,7 @@ class FormLoginView(object):
 "border:Now")
         self.registra_bt = QPushButton(self.frame)
         self.registra_bt.setObjectName(u"registra_bt")
-        self.registra_bt.setGeometry(QRect(450, 420, 111, 41))
+        self.registra_bt.setGeometry(QRect(410, 420, 101, 41))
         palette6 = QPalette()
         brush9 = QBrush(QColor(11, 69, 16, 255))
         brush9.setStyle(Qt.SolidPattern)
