@@ -4,6 +4,7 @@ from db.db_dao import DB_DAO
 from forms.registrar.form_registation import FormRegister
 from masterPanel.main_panel import MainPanel
 from werkzeug.security import check_password_hash
+import time
 
 
 class FormLogin(FormLoginView, QMainWindow):
@@ -11,13 +12,13 @@ class FormLogin(FormLoginView, QMainWindow):
     def __init__(self):
         self.dao = DB_DAO()
         super().__init__()
-        self.ui = FormLoginView()
-        self.ui.setupUi(self)
+        self.ui = FormLoginView() #asignamos a la variable ui nuestra ventana
+        self.ui.setupUi(self) # la establecemos
         self.ventana = FormRegister()
         self.panel = MainPanel()
-       # Accioón del boton "inicio de sesión"
+
+       # Acciones de los botones: Ininio sesion y registrar
         self.ui.login_bt.clicked.connect(self.verificar)
-        #self.ventanaRegistrar = FormRegisterView()
         self.ui.registra_bt.clicked.connect(self.ventanaRegistrar)
 
     def verificar(self):
@@ -27,11 +28,8 @@ class FormLogin(FormLoginView, QMainWindow):
         passw_entry = self.ui.password.text()
 
         if self.correctUser(user_entry) and self.correctPassword(passw_entry, user_entry):
-            #self.ui.contrasena_incorrecta.setText('CORRECTO')
-            #self.ui.usuario_incorrecto.setText('CORRECTO')
             self.hide()
             self.mainWindow()
-
         else:
             self.ui.contrasena_incorrecta.setText('Contraseña incorrecta')
             self.ui.usuario_incorrecto.setText('Usuario incorrecto')
@@ -53,6 +51,12 @@ class FormLogin(FormLoginView, QMainWindow):
             same = True
 
         return same
+
+    def progressBarview(self):
+        for i in range(0,99):
+            time.sleep(0.02)
+            #self.ui.progressBar.setValue(i)
+            #self.ui.cargar_label.setText('Cargando...')
 
     def ventanaRegistrar(self):
         #self.ventana = FormRegister()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_registrarTBupOP.ui'
+## Form generated from reading UI file 'ui_registrarybXlmy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -135,6 +135,7 @@ class FormRegisterView(object):
         self.password_rgs.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:10px;\n"
 "border:Noe; ")
+        self.password_rgs.setEchoMode(QLineEdit.Password)
         self.password_rgs.setAlignment(Qt.AlignCenter)
         self.label_4 = QLabel(self.frame)
         self.label_4.setObjectName(u"label_4")
@@ -173,6 +174,7 @@ class FormRegisterView(object):
         self.passwordConfir_rgs.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:10px;\n"
 "border:Noe; ")
+        self.passwordConfir_rgs.setEchoMode(QLineEdit.Password)
         self.passwordConfir_rgs.setAlignment(Qt.AlignCenter)
         self.registrar_bt = QPushButton(self.frame)
         self.registrar_bt.setObjectName(u"registrar_bt")
@@ -263,6 +265,17 @@ class FormRegisterView(object):
         icon.addFile(u"img/atras.png", QSize(), QIcon.Normal, QIcon.Off)
         self.back_bt.setIcon(icon)
         self.back_bt.setIconSize(QSize(30, 30))
+        self.registroOK_label = QLabel(self.frame)
+        self.registroOK_label.setObjectName(u"registroOK_label")
+        self.registroOK_label.setGeometry(QRect(300, 580, 201, 20))
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.registroOK_label.setFont(font4)
+        self.registroOK_label.setStyleSheet(u"\n"
+"border:Noe;\n"
+"color: rgb(237, 0, 17);")
 
         self.verticalLayout.addWidget(self.frame)
 
@@ -288,5 +301,6 @@ class FormRegisterView(object):
         self.registrar_bt.setText(QCoreApplication.translate("MainWindow", u"registrar", None))
         self.passDiferente_incorrecto.setText("")
         self.back_bt.setText("")
+        self.registroOK_label.setText("")
     # retranslateUi
 

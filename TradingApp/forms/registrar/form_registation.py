@@ -2,6 +2,7 @@ from forms.registrar.form_registation_view import FormRegisterView
 from werkzeug.security import generate_password_hash
 from db.db_dao import DB_DAO
 from PySide2.QtWidgets import *
+import time
 
 
 class FormRegister(FormRegisterView, QMainWindow):
@@ -27,6 +28,9 @@ class FormRegister(FormRegisterView, QMainWindow):
             if not self.dao.existeUsuario(userName_entry):
                 self.dao.registrarUsuario([userName_entry, encrypted_password])
                 print("Se ha registrado el usuario")
+                self.ventana.registroOK_label.setText('Se ha registrado con exito')
+                #time.sleep(4)
+                #self.ventana.registroOK_label.setText('')
                 self.hide()
 
     def isConfirmationPassword(self):

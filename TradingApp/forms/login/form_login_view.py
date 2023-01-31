@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'TradingApp2ldIaED.ui'
+## Form generated from reading UI file 'TradingApp2FOxDaQ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -106,10 +106,11 @@ class FormLoginView(object):
         self.password.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:10px;\n"
 "border:Noe; ")
+        self.password.setEchoMode(QLineEdit.Password)
         self.password.setAlignment(Qt.AlignCenter)
         self.login_bt = QPushButton(self.frame)
         self.login_bt.setObjectName(u"login_bt")
-        self.login_bt.setGeometry(QRect(290, 420, 101, 41))
+        self.login_bt.setGeometry(QRect(290, 430, 101, 41))
         palette1 = QPalette()
         brush5 = QBrush(QColor(33, 142, 36, 255))
         brush5.setStyle(Qt.SolidPattern)
@@ -144,24 +145,9 @@ class FormLoginView(object):
 "	border: 2px solid #000000\n"
 "}\n"
 "")
-        self.progressBar = QProgressBar(self.frame)
-        self.progressBar.setObjectName(u"progressBar")
-        self.progressBar.setGeometry(QRect(130, 480, 551, 23))
-        self.progressBar.setStyleSheet(u"QProgressBar{\n"
-"	border-radius:25px; \n"
-"	border: 0px;\n"
-"	\n"
-"\n"
-"}\n"
-"\n"
-"")
-        self.progressBar.setValue(0)
-        self.progressBar.setAlignment(Qt.AlignCenter)
-        self.progressBar.setTextVisible(True)
-        self.progressBar.setTextDirection(QProgressBar.TopToBottom)
         self.salir_bt = QPushButton(self.frame)
         self.salir_bt.setObjectName(u"salir_bt")
-        self.salir_bt.setGeometry(QRect(360, 550, 101, 41))
+        self.salir_bt.setGeometry(QRect(350, 550, 101, 41))
         palette2 = QPalette()
         brush6 = QBrush(QColor(200, 1, 17, 255))
         brush6.setStyle(Qt.SolidPattern)
@@ -226,7 +212,7 @@ class FormLoginView(object):
         self.usuario.setAlignment(Qt.AlignCenter)
         self.usuario_incorrecto = QLabel(self.frame)
         self.usuario_incorrecto.setObjectName(u"usuario_incorrecto")
-        self.usuario_incorrecto.setGeometry(QRect(320, 286, 221, 20))
+        self.usuario_incorrecto.setGeometry(QRect(290, 286, 221, 20))
         palette4 = QPalette()
         brush7 = QBrush(QColor(237, 0, 17, 255))
         brush7.setStyle(Qt.SolidPattern)
@@ -257,7 +243,7 @@ class FormLoginView(object):
         self.usuario_incorrecto.setAlignment(Qt.AlignCenter)
         self.contrasena_incorrecta = QLabel(self.frame)
         self.contrasena_incorrecta.setObjectName(u"contrasena_incorrecta")
-        self.contrasena_incorrecta.setGeometry(QRect(330, 390, 221, 20))
+        self.contrasena_incorrecta.setGeometry(QRect(280, 390, 221, 20))
         palette5 = QPalette()
         palette5.setBrush(QPalette.Active, QPalette.WindowText, brush7)
         palette5.setBrush(QPalette.Active, QPalette.Button, brush8)
@@ -276,14 +262,9 @@ class FormLoginView(object):
         self.contrasena_incorrecta.setStyleSheet(u"font: 75 11pt \"Arial\";\n"
 "border:Noe")
         self.contrasena_incorrecta.setAlignment(Qt.AlignCenter)
-        self.cargar_label = QLabel(self.frame)
-        self.cargar_label.setObjectName(u"cargar_label")
-        self.cargar_label.setGeometry(QRect(410, 520, 71, 16))
-        self.cargar_label.setStyleSheet(u"\n"
-"border:Now")
         self.registra_bt = QPushButton(self.frame)
         self.registra_bt.setObjectName(u"registra_bt")
-        self.registra_bt.setGeometry(QRect(410, 420, 101, 41))
+        self.registra_bt.setGeometry(QRect(410, 430, 101, 41))
         palette6 = QPalette()
         brush9 = QBrush(QColor(11, 69, 16, 255))
         brush9.setStyle(Qt.SolidPattern)
@@ -336,7 +317,6 @@ class FormLoginView(object):
         self.usuario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese su usuario o correo", None))
         self.usuario_incorrecto.setText("")
         self.contrasena_incorrecta.setText("")
-        self.cargar_label.setText("")
         self.registra_bt.setText(QCoreApplication.translate("MainWindow", u"Registrar", None))
     # retranslateUi
 

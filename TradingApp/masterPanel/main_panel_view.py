@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowMqOKWP.ui'
+## Form generated from reading UI file 'main_windowbKmmvI.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,7 +13,7 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class MainWindow(object):
+class MainPanelView(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
@@ -35,7 +35,7 @@ class MainWindow(object):
         self.horizontalLayout_2 = QHBoxLayout(self.frame_superior)
         self.horizontalLayout_2.setSpacing(2)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 5, 0)
         self.munu_bt = QPushButton(self.frame_superior)
         self.munu_bt.setObjectName(u"munu_bt")
         self.munu_bt.setMinimumSize(QSize(150, 35))
@@ -173,14 +173,27 @@ class MainWindow(object):
         self.frame_izq.setFrameShape(QFrame.StyledPanel)
         self.frame_izq.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.frame_izq)
+        self.verticalLayout_3.setSpacing(5)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 9)
+        self.inicio_bt = QPushButton(self.frame_izq)
+        self.inicio_bt.setObjectName(u"inicio_bt")
+        self.inicio_bt.setMinimumSize(QSize(50, 50))
+        self.inicio_bt.setMaximumSize(QSize(16777215, 50))
+        icon3 = QIcon()
+        icon3.addFile(u"img/home.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.inicio_bt.setIcon(icon3)
+        self.inicio_bt.setIconSize(QSize(32, 32))
+
+        self.verticalLayout_3.addWidget(self.inicio_bt)
+
         self.trading_bt = QPushButton(self.frame_izq)
         self.trading_bt.setObjectName(u"trading_bt")
         self.trading_bt.setMinimumSize(QSize(50, 50))
         self.trading_bt.setMaximumSize(QSize(16777215, 50))
-        icon3 = QIcon()
-        icon3.addFile(u"img/trading.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.trading_bt.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u"img/trading.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.trading_bt.setIcon(icon4)
         self.trading_bt.setIconSize(QSize(32, 32))
 
         self.verticalLayout_3.addWidget(self.trading_bt)
@@ -189,9 +202,9 @@ class MainWindow(object):
         self.historial_bt.setObjectName(u"historial_bt")
         self.historial_bt.setMinimumSize(QSize(50, 50))
         self.historial_bt.setMaximumSize(QSize(16777215, 50))
-        icon4 = QIcon()
-        icon4.addFile(u"img/historial2.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.historial_bt.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u"img/historial2.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.historial_bt.setIcon(icon5)
         self.historial_bt.setIconSize(QSize(32, 32))
 
         self.verticalLayout_3.addWidget(self.historial_bt)
@@ -200,9 +213,9 @@ class MainWindow(object):
         self.info_bt.setObjectName(u"info_bt")
         self.info_bt.setMinimumSize(QSize(50, 50))
         self.info_bt.setMaximumSize(QSize(16777215, 50))
-        icon5 = QIcon()
-        icon5.addFile(u"img/info.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.info_bt.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u"img/info.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.info_bt.setIcon(icon6)
         self.info_bt.setIconSize(QSize(32, 32))
 
         self.verticalLayout_3.addWidget(self.info_bt)
@@ -212,9 +225,9 @@ class MainWindow(object):
         self.perfil_bt.setMinimumSize(QSize(50, 50))
         self.perfil_bt.setMaximumSize(QSize(16777215, 50))
         self.perfil_bt.setLayoutDirection(Qt.LeftToRight)
-        icon6 = QIcon()
-        icon6.addFile(u"img/profile.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.perfil_bt.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u"img/profile.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.perfil_bt.setIcon(icon7)
         self.perfil_bt.setIconSize(QSize(32, 32))
 
         self.verticalLayout_3.addWidget(self.perfil_bt)
@@ -246,42 +259,51 @@ class MainWindow(object):
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border:Noe")
+        self.page_inicio = QWidget()
+        self.page_inicio.setObjectName(u"page_inicio")
+        self.inicio_label = QLabel(self.page_inicio)
+        self.inicio_label.setObjectName(u"inicio_label")
+        self.inicio_label.setGeometry(QRect(50, 0, 711, 611))
+        self.inicio_label.setStyleSheet(u"border:Noe")
+        self.inicio_label.setFrameShadow(QFrame.Plain)
+        self.inicio_label.setPixmap(QPixmap(u"img/inico.png"))
+        self.inicio_label.setScaledContents(True)
+        self.inicio_label.setAlignment(Qt.AlignCenter)
+        self.inicio_label.setIndent(0)
+        self.stackedWidget.addWidget(self.page_inicio)
         self.page_trading = QWidget()
         self.page_trading.setObjectName(u"page_trading")
-        self.pushButton = QPushButton(self.page_trading)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(30, 190, 641, 26))
-        self.pushButton.setStyleSheet(u"background-color: rgb(27, 18, 255);")
+        self.trading_bt_pg = QPushButton(self.page_trading)
+        self.trading_bt_pg.setObjectName(u"trading_bt_pg")
+        self.trading_bt_pg.setGeometry(QRect(190, 120, 641, 26))
+        self.trading_bt_pg.setStyleSheet(u"background-color: rgb(27, 18, 255);")
         self.stackedWidget.addWidget(self.page_trading)
         self.page_historial = QWidget()
         self.page_historial.setObjectName(u"page_historial")
-        self.pushButton_2 = QPushButton(self.page_historial)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(60, 240, 571, 26))
-        self.pushButton_2.setStyleSheet(u"background-color: rgb(69, 255, 74);\n"
+        self.historial_bt_pg = QPushButton(self.page_historial)
+        self.historial_bt_pg.setObjectName(u"historial_bt_pg")
+        self.historial_bt_pg.setGeometry(QRect(260, 120, 571, 26))
+        self.historial_bt_pg.setStyleSheet(u"background-color: rgb(69, 255, 74);\n"
 "color: rgba(0, 0, 0, 240);")
         self.stackedWidget.addWidget(self.page_historial)
         self.page_info = QWidget()
         self.page_info.setObjectName(u"page_info")
-        self.pushButton_3 = QPushButton(self.page_info)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setGeometry(QRect(110, 220, 431, 26))
-        self.pushButton_3.setStyleSheet(u"background-color: rgb(167, 14, 61);\n"
+        self.info_nt_pg = QPushButton(self.page_info)
+        self.info_nt_pg.setObjectName(u"info_nt_pg")
+        self.info_nt_pg.setGeometry(QRect(310, 130, 431, 26))
+        self.info_nt_pg.setStyleSheet(u"background-color: rgb(167, 14, 61);\n"
 "color: rgba(0, 0, 0, 240);")
         self.stackedWidget.addWidget(self.page_info)
         self.page_perfil = QWidget()
         self.page_perfil.setObjectName(u"page_perfil")
-        self.pushButton_4 = QPushButton(self.page_perfil)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(60, 220, 561, 26))
-        self.pushButton_4.setStyleSheet(u"background-color: rgb(172, 97, 36);")
+        self.perfil_bt_pg = QPushButton(self.page_perfil)
+        self.perfil_bt_pg.setObjectName(u"perfil_bt_pg")
+        self.perfil_bt_pg.setGeometry(QRect(290, 220, 561, 26))
+        self.perfil_bt_pg.setStyleSheet(u"background-color: rgb(172, 97, 36);")
         self.stackedWidget.addWidget(self.page_perfil)
-        self.page_veinte = QWidget()
-        self.page_veinte.setObjectName(u"page_veinte")
-        self.stackedWidget.addWidget(self.page_veinte)
-        self.page_2 = QWidget()
-        self.page_2.setObjectName(u"page_2")
-        self.stackedWidget.addWidget(self.page_2)
+        self.page_admin = QWidget()
+        self.page_admin.setObjectName(u"page_admin")
+        self.stackedWidget.addWidget(self.page_admin)
 
         self.verticalLayout_2.addWidget(self.stackedWidget)
 
@@ -303,14 +325,16 @@ class MainWindow(object):
         self.munu_bt.setText("")
         self.admin_bt.setText("")
         self.salir_bt.setText("")
+        self.inicio_bt.setText(QCoreApplication.translate("MainWindow", u"   Inicio  ", None))
         self.trading_bt.setText(QCoreApplication.translate("MainWindow", u"   Trading", None))
         self.historial_bt.setText(QCoreApplication.translate("MainWindow", u"   Hisorial", None))
         self.info_bt.setText(QCoreApplication.translate("MainWindow", u"   Ayuda  ", None))
         self.perfil_bt.setText(QCoreApplication.translate("MainWindow", u"  Perfil    ", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"TradingApp", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"trading", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"perfil", None))
+        self.inicio_label.setText("")
+        self.trading_bt_pg.setText(QCoreApplication.translate("MainWindow", u"trading", None))
+        self.historial_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
+        self.info_nt_pg.setText(QCoreApplication.translate("MainWindow", u"PageAyuda", None))
+        self.perfil_bt_pg.setText(QCoreApplication.translate("MainWindow", u"perfil", None))
     # retranslateUi
 
