@@ -14,6 +14,7 @@ class FormLogin(FormLoginView, QMainWindow):
         super().__init__()
         self.ui = FormLoginView() #asignamos a la variable ui nuestra ventana
         self.ui.setupUi(self) # la establecemos
+        self.setWindowTitle("Login")
         self.ventana = FormRegister()
         self.panel = MainPanel()
 

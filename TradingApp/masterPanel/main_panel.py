@@ -14,6 +14,7 @@ class MainPanel(MainPanelView, QMainWindow):
         super().__init__()
         self.mainWindow = MainPanelView()
         self.mainWindow.setupUi(self)
+        self.setWindowTitle("TradingApp")
 
         # Acceso a paginas:
 

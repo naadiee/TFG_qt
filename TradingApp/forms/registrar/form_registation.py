@@ -12,6 +12,7 @@ class FormRegister(FormRegisterView, QMainWindow):
         super().__init__()
         self.ventana = FormRegisterView()
         self.ventana.setupUi(self)
+        self.setWindowTitle("Registrar")
         self.ventana.registrar_bt.clicked.connect(self.register)
         self.ventana.back_bt.clicked.connect(self.back)
 
