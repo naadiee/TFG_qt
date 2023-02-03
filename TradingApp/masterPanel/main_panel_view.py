@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowbKmmvI.ui'
+## Form generated from reading UI file 'main_windowXHCNAp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class MainPanelView(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(917, 659)
+        MainWindow.resize(923, 662)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -288,11 +288,35 @@ class MainPanelView(object):
         self.stackedWidget.addWidget(self.page_historial)
         self.page_info = QWidget()
         self.page_info.setObjectName(u"page_info")
-        self.info_nt_pg = QPushButton(self.page_info)
-        self.info_nt_pg.setObjectName(u"info_nt_pg")
-        self.info_nt_pg.setGeometry(QRect(310, 130, 431, 26))
-        self.info_nt_pg.setStyleSheet(u"background-color: rgb(167, 14, 61);\n"
-"color: rgba(0, 0, 0, 240);")
+        self.frame = QFrame(self.page_info)
+        self.frame.setObjectName(u"frame")
+        self.frame.setGeometry(QRect(170, 0, 751, 621))
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.frame_2 = QFrame(self.frame)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setGeometry(QRect(90, 20, 271, 321))
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.label_2 = QLabel(self.frame_2)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(20, 10, 261, 321))
+        self.label_2.setStyleSheet(u"color: rgb(237, 0, 17);")
+        self.label_2.setTextFormat(Qt.MarkdownText)
+        self.label_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
+        self.label_2.setWordWrap(True)
+        self.frame_3 = QFrame(self.frame)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setGeometry(QRect(440, 20, 271, 321))
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.label_3 = QLabel(self.frame_3)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(40, 10, 261, 321))
+        self.label_3.setStyleSheet(u"color: rgb(237, 0, 17);")
+        self.label_3.setTextFormat(Qt.MarkdownText)
+        self.label_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
+        self.label_3.setWordWrap(True)
         self.stackedWidget.addWidget(self.page_info)
         self.page_perfil = QWidget()
         self.page_perfil.setObjectName(u"page_perfil")
@@ -334,7 +358,28 @@ class MainPanelView(object):
         self.inicio_label.setText("")
         self.trading_bt_pg.setText(QCoreApplication.translate("MainWindow", u"trading", None))
         self.historial_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
-        self.info_nt_pg.setText(QCoreApplication.translate("MainWindow", u"PageAyuda", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"## Casa\n"
+"### Subt\u00edtulo\n"
+"Este es un ejemplo de texto que da entrada a una lista gen\u00e9rica de elementos:\n"
+"- Elemento 1\n"
+"- Elemento 2\n"
+"- Elemento 3\n"
+"Este es un ejemplo de texto que da entrada a una lista numerada:\n"
+"1. Elemento 1\n"
+"2. Elemento 2\n"
+"3. Elemento 3\n"
+"Al texto en Markdown puedes a\u00f1adirle formato como **negrita** o *cursiva* de una manera muy sencilla.", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"## Casa\n"
+"### Subt\u00edtulo\n"
+"Este es un ejemplo de texto que da entrada a una lista gen\u00e9rica de elementos:\n"
+"- Elemento 1\n"
+"- Elemento 2\n"
+"- Elemento 3\n"
+"Este es un ejemplo de texto que da entrada a una lista numerada:\n"
+"1. Elemento 1\n"
+"2. Elemento 2\n"
+"3. Elemento 3\n"
+"Al texto en Markdown puedes a\u00f1adirle formato como **negrita** o *cursiva* de una manera muy sencilla.", None))
         self.perfil_bt_pg.setText(QCoreApplication.translate("MainWindow", u"perfil", None))
     # retranslateUi
 

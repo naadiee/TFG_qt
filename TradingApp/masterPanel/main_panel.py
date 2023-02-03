@@ -52,7 +52,7 @@ class MainPanel(MainPanelView, QMainWindow):
             ampliar = 0
             ocultar = 0
             if ancho == 0:
-                ampliar = 200
+                ampliar = 150
             else:
                 ampliar = ocultar
             self.animacion = QPropertyAnimation(self.mainWindow.frame_izq, b'minimumWidth')

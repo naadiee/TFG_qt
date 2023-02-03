@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'TradingApp2FOxDaQ.ui'
+## Form generated from reading UI file 'TradingApp2sHhCyn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -299,6 +299,10 @@ class FormLoginView(object):
         self.verticalLayout.addWidget(self.frame)
 
         MainWindow.setCentralWidget(self.centralwidget)
+        QWidget.setTabOrder(self.usuario, self.password)
+        QWidget.setTabOrder(self.password, self.login_bt)
+        QWidget.setTabOrder(self.login_bt, self.registra_bt)
+        QWidget.setTabOrder(self.registra_bt, self.salir_bt)
 
         self.retranslateUi(MainWindow)
         self.salir_bt.clicked.connect(MainWindow.close)
