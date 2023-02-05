@@ -39,7 +39,10 @@ class MainPanel(MainPanelView, QMainWindow):
             lambda: self.mainWindow.stackedWidget.setCurrentWidget(
                 self.mainWindow.page_perfil))
 
-        # Pagina Historial
+        # Pagina Admin
+        self.mainWindow.admin_bt.clicked.connect(
+            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
+                self.mainWindow.page_admin))
 
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
