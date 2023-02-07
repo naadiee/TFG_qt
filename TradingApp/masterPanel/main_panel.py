@@ -5,8 +5,9 @@ from masterPanel.main_panel_view import MainPanelView
 from forms.registrar.form_registation import FormRegister
 
 from PySide2 import QtCore
-from PySide2 import QtGui,QtWidgets
+from PySide2 import QtGui, QtWidgets
 from PySide2.QtCore import QPropertyAnimation
+
 
 class MainPanel(MainPanelView, QMainWindow):
     def __init__(self):
@@ -47,6 +48,9 @@ class MainPanel(MainPanelView, QMainWindow):
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
 
+        #self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
+        self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
+
 
 
     def mostrarMenu(self):
@@ -65,3 +69,9 @@ class MainPanel(MainPanelView, QMainWindow):
             self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animacion.start()
 
+    def cambiarNombreUsuario(self):
+        nuevoUser = self.mainWindow.usuarioNuevo_tb.text().strip()
+        old_pass = self.mainWindow.passwordConfirm_tb.text().strip()
+
+        print(nuevoUser)
+        print(old_pass)
