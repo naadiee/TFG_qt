@@ -15,12 +15,12 @@ class Perfil():
             lambda: self.mainWindow.stackedWidget.setCurrentWidget(
                 self.mainWindow.page_perfil))
         # Aceptar cambiar nombre
-        self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
+        self.mainWindow.aceptarUser_bt_pg.clicked.connect(self.cambiarNombreUsuario)
 
     def cambiarNombreUsuario(self):
 
-        nuevo_user = self.mainWindow.usuarioNuevo_tb.text().strip()
-        old_pass = self.mainWindow.passwordConfirm_tb.text().strip()
+        nuevo_user = self.mainWindow.usuarioNuevo_tab.text().strip()
+        old_pass = self.mainWindow.passwordConfirm_tab.text().strip()
 
         print(nuevo_user)
         print(old_pass)

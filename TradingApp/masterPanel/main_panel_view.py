@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowBQmyda.ui'
+## Form generated from reading UI file 'main_windowUbZZuN.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -18,6 +18,11 @@ class MainPanelView(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(921, 661)
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -138,6 +143,8 @@ class MainPanelView(object):
 
         self.frame_inferior = QFrame(self.centralwidget)
         self.frame_inferior.setObjectName(u"frame_inferior")
+        sizePolicy.setHeightForWidth(self.frame_inferior.sizePolicy().hasHeightForWidth())
+        self.frame_inferior.setSizePolicy(sizePolicy)
         self.frame_inferior.setStyleSheet(u"border:Noe")
         self.frame_inferior.setFrameShape(QFrame.StyledPanel)
         self.frame_inferior.setFrameShadow(QFrame.Raised)
@@ -147,6 +154,8 @@ class MainPanelView(object):
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_izq = QFrame(self.frame_inferior)
         self.frame_izq.setObjectName(u"frame_izq")
+        sizePolicy.setHeightForWidth(self.frame_izq.sizePolicy().hasHeightForWidth())
+        self.frame_izq.setSizePolicy(sizePolicy)
         self.frame_izq.setMinimumSize(QSize(0, 0))
         self.frame_izq.setMaximumSize(QSize(0, 16777215))
         self.frame_izq.setStyleSheet(u"QFrame{\n"
@@ -248,8 +257,8 @@ class MainPanelView(object):
 
         self.frame_contenedor = QFrame(self.frame_inferior)
         self.frame_contenedor.setObjectName(u"frame_contenedor")
-        self.frame_contenedor.setMinimumSize(QSize(771, 621))
-        self.frame_contenedor.setMaximumSize(QSize(921, 621))
+        self.frame_contenedor.setMinimumSize(QSize(921, 621))
+        self.frame_contenedor.setMaximumSize(QSize(16777215, 16777215))
         self.frame_contenedor.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border:Noe")
         self.frame_contenedor.setFrameShape(QFrame.StyledPanel)
@@ -260,6 +269,8 @@ class MainPanelView(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget = QStackedWidget(self.frame_contenedor)
         self.stackedWidget.setObjectName(u"stackedWidget")
+        sizePolicy.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
+        self.stackedWidget.setSizePolicy(sizePolicy)
         self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border:Noe")
         self.page_inicio = QWidget()
@@ -279,6 +290,8 @@ class MainPanelView(object):
         self.trading_bt_pg = QPushButton(self.page_trading)
         self.trading_bt_pg.setObjectName(u"trading_bt_pg")
         self.trading_bt_pg.setGeometry(QRect(190, 120, 641, 26))
+        sizePolicy.setHeightForWidth(self.trading_bt_pg.sizePolicy().hasHeightForWidth())
+        self.trading_bt_pg.setSizePolicy(sizePolicy)
         self.trading_bt_pg.setStyleSheet(u"background-color: rgb(27, 18, 255);")
         self.stackedWidget.addWidget(self.page_trading)
         self.page_historial = QWidget()
@@ -286,6 +299,8 @@ class MainPanelView(object):
         self.historial_bt_pg = QPushButton(self.page_historial)
         self.historial_bt_pg.setObjectName(u"historial_bt_pg")
         self.historial_bt_pg.setGeometry(QRect(260, 120, 571, 26))
+        sizePolicy.setHeightForWidth(self.historial_bt_pg.sizePolicy().hasHeightForWidth())
+        self.historial_bt_pg.setSizePolicy(sizePolicy)
         self.historial_bt_pg.setStyleSheet(u"background-color: rgb(69, 255, 74);\n"
 "color: rgba(0, 0, 0, 240);")
         self.stackedWidget.addWidget(self.page_historial)
@@ -314,49 +329,38 @@ class MainPanelView(object):
         self.stackedWidget.addWidget(self.page_info)
         self.page_perfil = QWidget()
         self.page_perfil.setObjectName(u"page_perfil")
-        self.verticalLayout_4 = QVBoxLayout(self.page_perfil)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        sizePolicy.setHeightForWidth(self.page_perfil.sizePolicy().hasHeightForWidth())
+        self.page_perfil.setSizePolicy(sizePolicy)
+        self.horizontalLayout_4 = QHBoxLayout(self.page_perfil)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.tabWidget_perfil = QTabWidget(self.page_perfil)
         self.tabWidget_perfil.setObjectName(u"tabWidget_perfil")
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tabWidget_perfil.sizePolicy().hasHeightForWidth())
         self.tabWidget_perfil.setSizePolicy(sizePolicy)
-        self.tabWidget_perfil.setMaximumSize(QSize(921, 16777215))
+        self.tabWidget_perfil.setMinimumSize(QSize(921, 0))
+        self.tabWidget_perfil.setMaximumSize(QSize(1677721, 16777215))
         self.tabWidget_perfil.setStyleSheet(u"color: rgba(0, 0, 0, 240);\n"
 "border-radius:10px;")
         self.tabWidget_perfil.setTabPosition(QTabWidget.North)
         self.tabWidget_perfil.setTabShape(QTabWidget.Rounded)
         self.usuario_tab = QWidget()
         self.usuario_tab.setObjectName(u"usuario_tab")
-        self.frame = QFrame(self.usuario_tab)
-        self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(210, 39, 297, 60))
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
-        self.formLayout_3 = QFormLayout(self.frame)
-        self.formLayout_3.setObjectName(u"formLayout_3")
-        self.label_6 = QLabel(self.frame)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
-"font: 13pt \"Arial\";")
-
-        self.formLayout_3.setWidget(0, QFormLayout.LabelRole, self.label_6)
-
-        self.usuarioNuevo_tb = QLineEdit(self.frame)
-        self.usuarioNuevo_tb.setObjectName(u"usuarioNuevo_tb")
+        self.aceptarUser_bt_pg = QPushButton(self.usuario_tab)
+        self.aceptarUser_bt_pg.setObjectName(u"aceptarUser_bt_pg")
+        self.aceptarUser_bt_pg.setGeometry(QRect(450, 370, 101, 41))
+        sizePolicy.setHeightForWidth(self.aceptarUser_bt_pg.sizePolicy().hasHeightForWidth())
+        self.aceptarUser_bt_pg.setSizePolicy(sizePolicy)
         palette1 = QPalette()
         palette1.setBrush(QPalette.Active, QPalette.WindowText, brush2)
-        brush3 = QBrush(QColor(180, 180, 180, 255))
+        brush3 = QBrush(QColor(33, 142, 36, 255))
         brush3.setStyle(Qt.SolidPattern)
         palette1.setBrush(QPalette.Active, QPalette.Button, brush3)
         palette1.setBrush(QPalette.Active, QPalette.Text, brush2)
         palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
         palette1.setBrush(QPalette.Active, QPalette.Base, brush3)
         palette1.setBrush(QPalette.Active, QPalette.Window, brush3)
-        brush4 = QBrush(QColor(107, 107, 107, 128))
-        brush4.setStyle(Qt.SolidPattern)
+        brush4 = QBrush(QColor(0, 0, 0, 128))
+        brush4.setStyle(Qt.NoBrush)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
         palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush4)
 #endif
@@ -366,8 +370,10 @@ class MainPanelView(object):
         palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
         palette1.setBrush(QPalette.Inactive, QPalette.Base, brush3)
         palette1.setBrush(QPalette.Inactive, QPalette.Window, brush3)
+        brush5 = QBrush(QColor(0, 0, 0, 128))
+        brush5.setStyle(Qt.NoBrush)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush4)
+        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush5)
 #endif
         palette1.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
         palette1.setBrush(QPalette.Disabled, QPalette.Button, brush3)
@@ -375,308 +381,442 @@ class MainPanelView(object):
         palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
         palette1.setBrush(QPalette.Disabled, QPalette.Base, brush3)
         palette1.setBrush(QPalette.Disabled, QPalette.Window, brush3)
-        brush5 = QBrush(QColor(255, 255, 255, 128))
-        brush5.setStyle(Qt.SolidPattern)
+        brush6 = QBrush(QColor(0, 0, 0, 128))
+        brush6.setStyle(Qt.NoBrush)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
+        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush6)
 #endif
-        self.usuarioNuevo_tb.setPalette(palette1)
+        self.aceptarUser_bt_pg.setPalette(palette1)
         font1 = QFont()
+        font1.setFamily(u"Arial")
+        font1.setPointSize(14)
         font1.setBold(False)
-        font1.setWeight(50)
-        self.usuarioNuevo_tb.setFont(font1)
-        self.usuarioNuevo_tb.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
-"border-radius:10px;\n"
-"border:Noe; ")
-        self.usuarioNuevo_tb.setAlignment(Qt.AlignCenter)
-
-        self.formLayout_3.setWidget(0, QFormLayout.FieldRole, self.usuarioNuevo_tb)
-
-        self.label_7 = QLabel(self.frame)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
-"font: 13pt \"Arial\";")
-
-        self.formLayout_3.setWidget(1, QFormLayout.LabelRole, self.label_7)
-
-        self.passwordConfirm_tb = QLineEdit(self.frame)
-        self.passwordConfirm_tb.setObjectName(u"passwordConfirm_tb")
-        self.passwordConfirm_tb.setMaximumSize(QSize(16777215, 16777200))
-        palette2 = QPalette()
-        palette2.setBrush(QPalette.Active, QPalette.WindowText, brush2)
-        palette2.setBrush(QPalette.Active, QPalette.Button, brush3)
-        palette2.setBrush(QPalette.Active, QPalette.Text, brush2)
-        palette2.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
-        palette2.setBrush(QPalette.Active, QPalette.Base, brush3)
-        palette2.setBrush(QPalette.Active, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Active, QPalette.PlaceholderText, brush4)
-#endif
-        palette2.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
-        palette2.setBrush(QPalette.Inactive, QPalette.Button, brush3)
-        palette2.setBrush(QPalette.Inactive, QPalette.Text, brush2)
-        palette2.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
-        palette2.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette2.setBrush(QPalette.Inactive, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush4)
-#endif
-        palette2.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
-        palette2.setBrush(QPalette.Disabled, QPalette.Button, brush3)
-        palette2.setBrush(QPalette.Disabled, QPalette.Text, brush2)
-        palette2.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
-        palette2.setBrush(QPalette.Disabled, QPalette.Base, brush3)
-        palette2.setBrush(QPalette.Disabled, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
-#endif
-        self.passwordConfirm_tb.setPalette(palette2)
-        self.passwordConfirm_tb.setFont(font1)
-        self.passwordConfirm_tb.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
-"border-radius:10px;\n"
-"border:Noe; ")
-        self.passwordConfirm_tb.setAlignment(Qt.AlignCenter)
-
-        self.formLayout_3.setWidget(1, QFormLayout.FieldRole, self.passwordConfirm_tb)
-
-        self.tabWidget_perfil.addTab(self.usuario_tab, "")
-        self.password_tab = QWidget()
-        self.password_tab.setObjectName(u"password_tab")
-        self.frame_2 = QFrame(self.password_tab)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(160, 60, 391, 101))
-        self.frame_2.setStyleSheet(u"border-radius:10px;")
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
-        self.formLayout = QFormLayout(self.frame_2)
-        self.formLayout.setObjectName(u"formLayout")
-        self.label_10 = QLabel(self.frame_2)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
-"font: 13pt \"Arial\";")
-
-        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label_10)
-
-        self.oldPassword_tb = QLineEdit(self.frame_2)
-        self.oldPassword_tb.setObjectName(u"oldPassword_tb")
-        palette3 = QPalette()
-        palette3.setBrush(QPalette.Active, QPalette.WindowText, brush2)
-        palette3.setBrush(QPalette.Active, QPalette.Button, brush3)
-        palette3.setBrush(QPalette.Active, QPalette.Text, brush2)
-        palette3.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
-        palette3.setBrush(QPalette.Active, QPalette.Base, brush3)
-        palette3.setBrush(QPalette.Active, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Active, QPalette.PlaceholderText, brush4)
-#endif
-        palette3.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
-        palette3.setBrush(QPalette.Inactive, QPalette.Button, brush3)
-        palette3.setBrush(QPalette.Inactive, QPalette.Text, brush2)
-        palette3.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
-        palette3.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette3.setBrush(QPalette.Inactive, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush4)
-#endif
-        palette3.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
-        palette3.setBrush(QPalette.Disabled, QPalette.Button, brush3)
-        palette3.setBrush(QPalette.Disabled, QPalette.Text, brush2)
-        palette3.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
-        palette3.setBrush(QPalette.Disabled, QPalette.Base, brush3)
-        palette3.setBrush(QPalette.Disabled, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
-#endif
-        self.oldPassword_tb.setPalette(palette3)
-        self.oldPassword_tb.setFont(font1)
-        self.oldPassword_tb.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
-"border-radius:10px;\n"
-"border:Noe; ")
-        self.oldPassword_tb.setAlignment(Qt.AlignCenter)
-
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.oldPassword_tb)
-
-        self.label_11 = QLabel(self.frame_2)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
-"font: 13pt \"Arial\";")
-
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_11)
-
-        self.newPassword_tb = QLineEdit(self.frame_2)
-        self.newPassword_tb.setObjectName(u"newPassword_tb")
-        self.newPassword_tb.setMaximumSize(QSize(16777215, 16777200))
-        palette4 = QPalette()
-        palette4.setBrush(QPalette.Active, QPalette.WindowText, brush2)
-        palette4.setBrush(QPalette.Active, QPalette.Button, brush3)
-        palette4.setBrush(QPalette.Active, QPalette.Text, brush2)
-        palette4.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
-        palette4.setBrush(QPalette.Active, QPalette.Base, brush3)
-        palette4.setBrush(QPalette.Active, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Active, QPalette.PlaceholderText, brush4)
-#endif
-        palette4.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
-        palette4.setBrush(QPalette.Inactive, QPalette.Button, brush3)
-        palette4.setBrush(QPalette.Inactive, QPalette.Text, brush2)
-        palette4.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
-        palette4.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette4.setBrush(QPalette.Inactive, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush4)
-#endif
-        palette4.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
-        palette4.setBrush(QPalette.Disabled, QPalette.Button, brush3)
-        palette4.setBrush(QPalette.Disabled, QPalette.Text, brush2)
-        palette4.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
-        palette4.setBrush(QPalette.Disabled, QPalette.Base, brush3)
-        palette4.setBrush(QPalette.Disabled, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
-#endif
-        self.newPassword_tb.setPalette(palette4)
-        self.newPassword_tb.setFont(font1)
-        self.newPassword_tb.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
-"border-radius:10px;\n"
-"border:Noe; ")
-        self.newPassword_tb.setAlignment(Qt.AlignCenter)
-
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.newPassword_tb)
-
-        self.label_12 = QLabel(self.frame_2)
-        self.label_12.setObjectName(u"label_12")
-        self.label_12.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
-"font: 13pt \"Arial\";")
-
-        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_12)
-
-        self.newPasswordConfirm_tb = QLineEdit(self.frame_2)
-        self.newPasswordConfirm_tb.setObjectName(u"newPasswordConfirm_tb")
-        self.newPasswordConfirm_tb.setMaximumSize(QSize(16777215, 16777200))
-        palette5 = QPalette()
-        palette5.setBrush(QPalette.Active, QPalette.WindowText, brush2)
-        palette5.setBrush(QPalette.Active, QPalette.Button, brush3)
-        palette5.setBrush(QPalette.Active, QPalette.Text, brush2)
-        palette5.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
-        palette5.setBrush(QPalette.Active, QPalette.Base, brush3)
-        palette5.setBrush(QPalette.Active, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Active, QPalette.PlaceholderText, brush4)
-#endif
-        palette5.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
-        palette5.setBrush(QPalette.Inactive, QPalette.Button, brush3)
-        palette5.setBrush(QPalette.Inactive, QPalette.Text, brush2)
-        palette5.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
-        palette5.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette5.setBrush(QPalette.Inactive, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush4)
-#endif
-        palette5.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
-        palette5.setBrush(QPalette.Disabled, QPalette.Button, brush3)
-        palette5.setBrush(QPalette.Disabled, QPalette.Text, brush2)
-        palette5.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
-        palette5.setBrush(QPalette.Disabled, QPalette.Base, brush3)
-        palette5.setBrush(QPalette.Disabled, QPalette.Window, brush3)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
-#endif
-        self.newPasswordConfirm_tb.setPalette(palette5)
-        self.newPasswordConfirm_tb.setFont(font1)
-        self.newPasswordConfirm_tb.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
-"border-radius:10px;\n"
-"border:Noe; ")
-        self.newPasswordConfirm_tb.setAlignment(Qt.AlignCenter)
-
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.newPasswordConfirm_tb)
-
-        self.tabWidget_perfil.addTab(self.password_tab, "")
-
-        self.verticalLayout_4.addWidget(self.tabWidget_perfil)
-
-        self.botones_frame = QFrame(self.page_perfil)
-        self.botones_frame.setObjectName(u"botones_frame")
-        self.botones_frame.setMaximumSize(QSize(921, 61))
-        self.botones_frame.setFrameShape(QFrame.StyledPanel)
-        self.botones_frame.setFrameShadow(QFrame.Raised)
-        self.aceptar_bt_pg = QPushButton(self.botones_frame)
-        self.aceptar_bt_pg.setObjectName(u"aceptar_bt_pg")
-        self.aceptar_bt_pg.setGeometry(QRect(600, 10, 101, 41))
-        palette6 = QPalette()
-        brush6 = QBrush(QColor(33, 142, 36, 255))
-        brush6.setStyle(Qt.SolidPattern)
-        palette6.setBrush(QPalette.Active, QPalette.Button, brush6)
-        palette6.setBrush(QPalette.Active, QPalette.Base, brush6)
-        palette6.setBrush(QPalette.Active, QPalette.Window, brush6)
-        palette6.setBrush(QPalette.Inactive, QPalette.Button, brush6)
-        palette6.setBrush(QPalette.Inactive, QPalette.Base, brush6)
-        palette6.setBrush(QPalette.Inactive, QPalette.Window, brush6)
-        palette6.setBrush(QPalette.Disabled, QPalette.Button, brush6)
-        palette6.setBrush(QPalette.Disabled, QPalette.Base, brush6)
-        palette6.setBrush(QPalette.Disabled, QPalette.Window, brush6)
-        self.aceptar_bt_pg.setPalette(palette6)
-        font2 = QFont()
-        font2.setFamily(u"Arial")
-        font2.setPointSize(14)
-        font2.setBold(False)
-        font2.setItalic(False)
-        font2.setWeight(9)
-        self.aceptar_bt_pg.setFont(font2)
-        self.aceptar_bt_pg.setStyleSheet(u"QPushButton{\n"
+        font1.setItalic(False)
+        font1.setWeight(9)
+        self.aceptarUser_bt_pg.setFont(font1)
+        self.aceptarUser_bt_pg.setLayoutDirection(Qt.LeftToRight)
+        self.aceptarUser_bt_pg.setStyleSheet(u"QPushButton{\n"
 "\n"
 "	background-color: rgb(33, 142, 36);\n"
 "	font: 75 14pt \"Arial\";\n"
-"	border: 2px solid #ffffff;\n"
-"	border-radius:10px;\n"
+"	border: 2px solid #ffffff\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
 "\n"
 "	\n"
-"	background-color: rgb(43, 105, 23);\n"
+"	\n"
+"	background-color: rgb(27, 86, 21);\n"
 "	font: 75 14pt \"Arial\";\n"
-"	border: 2px solid #000000;\n"
-"	border-radius:10px;\n"
+"	border: 2px solid #000000\n"
 "}\n"
 "")
-        self.cancelar_bt_pg = QPushButton(self.botones_frame)
-        self.cancelar_bt_pg.setObjectName(u"cancelar_bt_pg")
-        self.cancelar_bt_pg.setGeometry(QRect(710, 10, 101, 41))
-        palette7 = QPalette()
-        brush7 = QBrush(QColor(200, 1, 17, 255))
+        self.passwordConfirm_tab = QLineEdit(self.usuario_tab)
+        self.passwordConfirm_tab.setObjectName(u"passwordConfirm_tab")
+        self.passwordConfirm_tab.setGeometry(QRect(490, 150, 231, 31))
+        palette2 = QPalette()
+        palette2.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        brush7 = QBrush(QColor(180, 180, 180, 255))
         brush7.setStyle(Qt.SolidPattern)
-        palette7.setBrush(QPalette.Active, QPalette.Button, brush7)
-        palette7.setBrush(QPalette.Active, QPalette.Base, brush7)
-        palette7.setBrush(QPalette.Active, QPalette.Window, brush7)
-        palette7.setBrush(QPalette.Inactive, QPalette.Button, brush7)
-        palette7.setBrush(QPalette.Inactive, QPalette.Base, brush7)
-        palette7.setBrush(QPalette.Inactive, QPalette.Window, brush7)
-        palette7.setBrush(QPalette.Disabled, QPalette.Button, brush7)
-        palette7.setBrush(QPalette.Disabled, QPalette.Base, brush7)
-        palette7.setBrush(QPalette.Disabled, QPalette.Window, brush7)
-        self.cancelar_bt_pg.setPalette(palette7)
-        self.cancelar_bt_pg.setFont(font2)
-        self.cancelar_bt_pg.setStyleSheet(u"QPushButton{\n"
+        palette2.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette2.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette2.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette2.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette2.setBrush(QPalette.Active, QPalette.Window, brush7)
+        brush8 = QBrush(QColor(107, 107, 107, 128))
+        brush8.setStyle(Qt.SolidPattern)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette2.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette2.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette2.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette2.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette2.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette2.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette2.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette2.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette2.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette2.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette2.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette2.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+        brush9 = QBrush(QColor(255, 255, 255, 128))
+        brush9.setStyle(Qt.SolidPattern)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.passwordConfirm_tab.setPalette(palette2)
+        font2 = QFont()
+        font2.setBold(False)
+        font2.setWeight(50)
+        self.passwordConfirm_tab.setFont(font2)
+        self.passwordConfirm_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.passwordConfirm_tab.setEchoMode(QLineEdit.Password)
+        self.passwordConfirm_tab.setAlignment(Qt.AlignCenter)
+        self.usuarioNuevo_tab = QLineEdit(self.usuario_tab)
+        self.usuarioNuevo_tab.setObjectName(u"usuarioNuevo_tab")
+        self.usuarioNuevo_tab.setGeometry(QRect(490, 90, 231, 31))
+        sizePolicy1 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.usuarioNuevo_tab.sizePolicy().hasHeightForWidth())
+        self.usuarioNuevo_tab.setSizePolicy(sizePolicy1)
+        palette3 = QPalette()
+        palette3.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette3.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette3.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette3.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette3.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette3.setBrush(QPalette.Active, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette3.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette3.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette3.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette3.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette3.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette3.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette3.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette3.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette3.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette3.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette3.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette3.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.usuarioNuevo_tab.setPalette(palette3)
+        self.usuarioNuevo_tab.setFont(font2)
+        self.usuarioNuevo_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.usuarioNuevo_tab.setAlignment(Qt.AlignCenter)
+        self.label_8 = QLabel(self.usuario_tab)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(270, 90, 201, 31))
+        self.label_8.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_8.setAlignment(Qt.AlignCenter)
+        self.label_9 = QLabel(self.usuario_tab)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(270, 150, 181, 31))
+        self.label_9.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_9.setAlignment(Qt.AlignCenter)
+        self.tabWidget_perfil.addTab(self.usuario_tab, "")
+        self.password_tab = QWidget()
+        self.password_tab.setObjectName(u"password_tab")
+        self.oldPasword_tab = QLineEdit(self.password_tab)
+        self.oldPasword_tab.setObjectName(u"oldPasword_tab")
+        self.oldPasword_tab.setGeometry(QRect(490, 90, 231, 31))
+        sizePolicy1.setHeightForWidth(self.oldPasword_tab.sizePolicy().hasHeightForWidth())
+        self.oldPasword_tab.setSizePolicy(sizePolicy1)
+        palette4 = QPalette()
+        palette4.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette4.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette4.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette4.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette4.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette4.setBrush(QPalette.Active, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette4.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette4.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette4.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette4.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette4.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette4.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette4.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette4.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette4.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette4.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette4.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette4.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.oldPasword_tab.setPalette(palette4)
+        self.oldPasword_tab.setFont(font2)
+        self.oldPasword_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.oldPasword_tab.setAlignment(Qt.AlignCenter)
+        self.label_13 = QLabel(self.password_tab)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setGeometry(QRect(270, 90, 201, 31))
+        self.label_13.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_13.setAlignment(Qt.AlignCenter)
+        self.newPassword_tab = QLineEdit(self.password_tab)
+        self.newPassword_tab.setObjectName(u"newPassword_tab")
+        self.newPassword_tab.setGeometry(QRect(490, 150, 231, 31))
+        sizePolicy1.setHeightForWidth(self.newPassword_tab.sizePolicy().hasHeightForWidth())
+        self.newPassword_tab.setSizePolicy(sizePolicy1)
+        palette5 = QPalette()
+        palette5.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette5.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette5.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette5.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette5.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette5.setBrush(QPalette.Active, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette5.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette5.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette5.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette5.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette5.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette5.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette5.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette5.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette5.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette5.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette5.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette5.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.newPassword_tab.setPalette(palette5)
+        self.newPassword_tab.setFont(font2)
+        self.newPassword_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.newPassword_tab.setAlignment(Qt.AlignCenter)
+        self.label_14 = QLabel(self.password_tab)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setGeometry(QRect(270, 150, 201, 31))
+        self.label_14.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_14.setAlignment(Qt.AlignCenter)
+        self.newPasswordConfirm_tab = QLineEdit(self.password_tab)
+        self.newPasswordConfirm_tab.setObjectName(u"newPasswordConfirm_tab")
+        self.newPasswordConfirm_tab.setGeometry(QRect(490, 210, 231, 31))
+        sizePolicy1.setHeightForWidth(self.newPasswordConfirm_tab.sizePolicy().hasHeightForWidth())
+        self.newPasswordConfirm_tab.setSizePolicy(sizePolicy1)
+        palette6 = QPalette()
+        palette6.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette6.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette6.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette6.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette6.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette6.setBrush(QPalette.Active, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette6.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette6.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette6.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette6.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette6.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette6.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette6.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette6.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette6.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette6.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette6.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette6.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette6.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette6.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette6.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.newPasswordConfirm_tab.setPalette(palette6)
+        self.newPasswordConfirm_tab.setFont(font2)
+        self.newPasswordConfirm_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.newPasswordConfirm_tab.setAlignment(Qt.AlignCenter)
+        self.label_15 = QLabel(self.password_tab)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setGeometry(QRect(270, 210, 201, 31))
+        self.label_15.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_15.setAlignment(Qt.AlignCenter)
+        self.aceptarUser_bt_pg_2 = QPushButton(self.password_tab)
+        self.aceptarUser_bt_pg_2.setObjectName(u"aceptarUser_bt_pg_2")
+        self.aceptarUser_bt_pg_2.setGeometry(QRect(450, 370, 101, 41))
+        sizePolicy.setHeightForWidth(self.aceptarUser_bt_pg_2.sizePolicy().hasHeightForWidth())
+        self.aceptarUser_bt_pg_2.setSizePolicy(sizePolicy)
+        palette7 = QPalette()
+        palette7.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette7.setBrush(QPalette.Active, QPalette.Button, brush3)
+        palette7.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette7.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette7.setBrush(QPalette.Active, QPalette.Base, brush3)
+        palette7.setBrush(QPalette.Active, QPalette.Window, brush3)
+        brush10 = QBrush(QColor(0, 0, 0, 128))
+        brush10.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette.Active, QPalette.PlaceholderText, brush10)
+#endif
+        palette7.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette7.setBrush(QPalette.Inactive, QPalette.Button, brush3)
+        palette7.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette7.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette7.setBrush(QPalette.Inactive, QPalette.Base, brush3)
+        palette7.setBrush(QPalette.Inactive, QPalette.Window, brush3)
+        brush11 = QBrush(QColor(0, 0, 0, 128))
+        brush11.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush11)
+#endif
+        palette7.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette7.setBrush(QPalette.Disabled, QPalette.Button, brush3)
+        palette7.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette7.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette7.setBrush(QPalette.Disabled, QPalette.Base, brush3)
+        palette7.setBrush(QPalette.Disabled, QPalette.Window, brush3)
+        brush12 = QBrush(QColor(0, 0, 0, 128))
+        brush12.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette7.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush12)
+#endif
+        self.aceptarUser_bt_pg_2.setPalette(palette7)
+        self.aceptarUser_bt_pg_2.setFont(font1)
+        self.aceptarUser_bt_pg_2.setStyleSheet(u"QPushButton{\n"
 "\n"
-"	\n"
-"	background-color: rgb(200, 1, 17);\n"
+"	background-color: rgb(33, 142, 36);\n"
 "	font: 75 14pt \"Arial\";\n"
-"	border: 2px solid #ffffff;\n"
-"	border-radius:10px;\n"
+"	border: 2px solid #ffffff\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
 "\n"
-"		\n"
 "	\n"
-"	background-color: rgb(132, 1, 11);\n"
+"	\n"
+"	background-color: rgb(27, 86, 21);\n"
 "	font: 75 14pt \"Arial\";\n"
-"	border: 2px solid #000000;\n"
-"	border-radius:10px;\n"
+"	border: 2px solid #000000\n"
 "}\n"
 "")
+        self.tabWidget_perfil.addTab(self.password_tab, "")
+        self.delete_tab = QWidget()
+        self.delete_tab.setObjectName(u"delete_tab")
+        self.checkBox = QCheckBox(self.delete_tab)
+        self.checkBox.setObjectName(u"checkBox")
+        self.checkBox.setGeometry(QRect(320, 80, 111, 21))
+        self.passwordConfirmDelete_tab = QLineEdit(self.delete_tab)
+        self.passwordConfirmDelete_tab.setObjectName(u"passwordConfirmDelete_tab")
+        self.passwordConfirmDelete_tab.setGeometry(QRect(470, 150, 231, 31))
+        palette8 = QPalette()
+        palette8.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette8.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette8.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette8.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette8.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette8.setBrush(QPalette.Active, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette8.setBrush(QPalette.Active, QPalette.PlaceholderText, brush8)
+#endif
+        palette8.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette8.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette8.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette8.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette8.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette8.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette8.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush8)
+#endif
+        palette8.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette8.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette8.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette8.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette8.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette8.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette8.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush9)
+#endif
+        self.passwordConfirmDelete_tab.setPalette(palette8)
+        self.passwordConfirmDelete_tab.setFont(font2)
+        self.passwordConfirmDelete_tab.setStyleSheet(u"background-color: rgb(180, 180, 180);\n"
+"border-radius:10px;\n"
+"border:Noe; ")
+        self.passwordConfirmDelete_tab.setEchoMode(QLineEdit.Password)
+        self.passwordConfirmDelete_tab.setAlignment(Qt.AlignCenter)
+        self.label_10 = QLabel(self.delete_tab)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setGeometry(QRect(270, 150, 181, 31))
+        self.label_10.setStyleSheet(u"color: rgba(64, 64, 64, 254);\n"
+"font: 16pt \"Arial\";")
+        self.label_10.setAlignment(Qt.AlignCenter)
+        self.aceptarPassworDelete_bt_pg = QPushButton(self.delete_tab)
+        self.aceptarPassworDelete_bt_pg.setObjectName(u"aceptarPassworDelete_bt_pg")
+        self.aceptarPassworDelete_bt_pg.setGeometry(QRect(450, 370, 101, 41))
+        sizePolicy.setHeightForWidth(self.aceptarPassworDelete_bt_pg.sizePolicy().hasHeightForWidth())
+        self.aceptarPassworDelete_bt_pg.setSizePolicy(sizePolicy)
+        palette9 = QPalette()
+        palette9.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette9.setBrush(QPalette.Active, QPalette.Button, brush3)
+        palette9.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette9.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette9.setBrush(QPalette.Active, QPalette.Base, brush3)
+        palette9.setBrush(QPalette.Active, QPalette.Window, brush3)
+        brush13 = QBrush(QColor(0, 0, 0, 128))
+        brush13.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette9.setBrush(QPalette.Active, QPalette.PlaceholderText, brush13)
+#endif
+        palette9.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette9.setBrush(QPalette.Inactive, QPalette.Button, brush3)
+        palette9.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette9.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette9.setBrush(QPalette.Inactive, QPalette.Base, brush3)
+        palette9.setBrush(QPalette.Inactive, QPalette.Window, brush3)
+        brush14 = QBrush(QColor(0, 0, 0, 128))
+        brush14.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette9.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush14)
+#endif
+        palette9.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette9.setBrush(QPalette.Disabled, QPalette.Button, brush3)
+        palette9.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette9.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette9.setBrush(QPalette.Disabled, QPalette.Base, brush3)
+        palette9.setBrush(QPalette.Disabled, QPalette.Window, brush3)
+        brush15 = QBrush(QColor(0, 0, 0, 128))
+        brush15.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette9.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush15)
+#endif
+        self.aceptarPassworDelete_bt_pg.setPalette(palette9)
+        self.aceptarPassworDelete_bt_pg.setFont(font1)
+        self.aceptarPassworDelete_bt_pg.setStyleSheet(u"QPushButton{\n"
+"\n"
+"	background-color: rgb(33, 142, 36);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #ffffff\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(27, 86, 21);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #000000\n"
+"}\n"
+"")
+        self.tabWidget_perfil.addTab(self.delete_tab, "")
 
-        self.verticalLayout_4.addWidget(self.botones_frame)
+        self.horizontalLayout_4.addWidget(self.tabWidget_perfil)
 
         self.stackedWidget.addWidget(self.page_perfil)
         self.page_admin = QWidget()
@@ -742,20 +882,25 @@ class MainPanelView(object):
 "2. Elemento 2\n"
 "3. Elemento 3\n"
 "Al texto en Markdown puedes a\u00f1adirle formato como **negrita** o *cursiva* de una manera muy sencilla.", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Nuevo nombre de usuario", None))
-        self.usuarioNuevo_tb.setPlaceholderText("")
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
-        self.passwordConfirm_tb.setPlaceholderText("")
+        self.aceptarUser_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
+        self.passwordConfirm_tab.setPlaceholderText("")
+        self.usuarioNuevo_tab.setPlaceholderText("")
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Nuevo nombre de usuario", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
         self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.usuario_tab), QCoreApplication.translate("MainWindow", u"Usuario", None))
-        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a antigua", None))
-        self.oldPassword_tb.setPlaceholderText("")
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a nueva", None))
-        self.newPassword_tb.setPlaceholderText("")
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Confirmar contrase\u00f1a ", None))
-        self.newPasswordConfirm_tb.setPlaceholderText("")
+        self.oldPasword_tab.setPlaceholderText("")
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a antigua", None))
+        self.newPassword_tab.setPlaceholderText("")
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a nueva", None))
+        self.newPasswordConfirm_tab.setPlaceholderText("")
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Confirmar contrase\u00f1a ", None))
+        self.aceptarUser_bt_pg_2.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.password_tab), QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
-        self.aceptar_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
-        self.cancelar_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Cancelar", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
+        self.passwordConfirmDelete_tab.setPlaceholderText("")
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
+        self.aceptarPassworDelete_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
+        self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.delete_tab), QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
         self.admin_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Admin", None))
     # retranslateUi
 
