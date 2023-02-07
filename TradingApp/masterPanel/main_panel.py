@@ -1,11 +1,11 @@
 from PySide2.QtWidgets import *
-from forms.login.form_login_view import FormLoginView
-from db.db_dao import DB_DAO
 from masterPanel.main_panel_view import MainPanelView
-from forms.registrar.form_registation import FormRegister
-
+from masterPanel.perfil import Perfil
+from masterPanel.admin import Admin
+from masterPanel.informacion import Informacion
+from masterPanel.trading import Trading
+from masterPanel.historial import Historial
 from PySide2 import QtCore
-from PySide2 import QtGui, QtWidgets
 from PySide2.QtCore import QPropertyAnimation
 
 
@@ -16,40 +16,21 @@ class MainPanel(MainPanelView, QMainWindow):
         self.mainWindow = MainPanelView()
         self.mainWindow.setupUi(self)
         self.setWindowTitle("TradingApp")
-
-        # Acceso a paginas:
+        self.perfil = Perfil(self.mainWindow)
+        self.admin = Admin(self.mainWindow)
+        self.info = Informacion(self.mainWindow)
+        self.trading = Trading(self.mainWindow)
+        self.historial = Historial(self.mainWindow)
 
         # Pagina Inicio
         self.mainWindow.inicio_bt.clicked.connect(
             lambda: self.mainWindow.stackedWidget.setCurrentWidget(
                 self.mainWindow.page_inicio))
-        #Pagina Trading
-        self.mainWindow.trading_bt.clicked.connect(
-            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
-                self.mainWindow.page_trading))
-        # Pagina Historial
-        self.mainWindow.historial_bt.clicked.connect(
-            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
-                self.mainWindow.page_historial))
-        # Pagina Información
-        self.mainWindow.info_bt.clicked.connect(
-            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
-                self.mainWindow.page_info)) # IMPORTANTE: info_bt y page_ayuda mismo nombre hay confusion
-        # Pagina perfil
-        self.mainWindow.perfil_bt.clicked.connect(
-            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
-                self.mainWindow.page_perfil))
-
-        # Pagina Admin
-        self.mainWindow.admin_bt.clicked.connect(
-            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
-                self.mainWindow.page_admin))
 
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
 
-        #self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
-        self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
+
 
 
 
@@ -69,9 +50,3 @@ class MainPanel(MainPanelView, QMainWindow):
             self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animacion.start()
 
-    def cambiarNombreUsuario(self):
-        nuevoUser = self.mainWindow.usuarioNuevo_tb.text().strip()
-        old_pass = self.mainWindow.passwordConfirm_tb.text().strip()
-
-        print(nuevoUser)
-        print(old_pass)

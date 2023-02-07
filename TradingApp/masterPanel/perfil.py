@@ -1,18 +1,26 @@
 from PySide2.QtWidgets import *
-from forms.login.form_login_view import FormLoginView
 from db.db_dao import DB_DAO
 
 from controller import Controller
 
 
-class Perfil:
+class Perfil():
 
-    def __init__(self):
+    def __init__(self, panel):
         self.dao = DB_DAO()
-        super().__init__()
-        #self.panel = MainPanelView()
-        self.controller = Controller()
+        self.mainWindow = panel
+
+        # Pagina perfil
+        self.mainWindow.perfil_bt.clicked.connect(
+            lambda: self.mainWindow.stackedWidget.setCurrentWidget(
+                self.mainWindow.page_perfil))
+        # Aceptar cambiar nombre
+        self.mainWindow.aceptar_bt_pg.clicked.connect(self.cambiarNombreUsuario)
 
     def cambiarNombreUsuario(self):
 
-        print(self.controller.getNuevoUser())
+        nuevo_user = self.mainWindow.usuarioNuevo_tb.text().strip()
+        old_pass = self.mainWindow.passwordConfirm_tb.text().strip()
+
+        print(nuevo_user)
+        print(old_pass)
