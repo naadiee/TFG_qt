@@ -1,5 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
+from werkzeug.security import check_password_hash
 
 
 class DB_DAO():
@@ -36,17 +37,6 @@ class DB_DAO():
             except Error as ex:
                 print("Error al intentar la conexión: {0}".format(ex))
 
-    def get_encryptedPassword(self,name):
-        password = self.getUsuario(name)
-        return password[1]
-
-    def existeUsuario(self, userName):
-        usuario_bd = self.getUsuario(userName)
-
-        if usuario_bd is None:
-            return False
-
-        return True
 
     def deleteUser(self,userName):
         if self.existeUsuario(userName):
@@ -65,8 +55,51 @@ class DB_DAO():
                         self.conexion.close() # Cerramos la conexión
 
 
+    def cambiarNombre(self, newName, odlName):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "UPDATE usuarios SET nombre = %s WHERE nombre = %s "
+                cursor.execute(sql, [newName, odlName])
+                self.conexion.commit()
+            except Error as ex:
+                print("Error al intentar la conexión: {0}".format(ex))
 
 
+    def cambiarPasword(self, newPass, userName):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "UPDATE usuarios SET password = %s WHERE nombre = %s "
+                cursor.execute(sql, [newPass, userName])
+                self.conexion.commit()
+            except Error as ex:
+                print("Error al intentar la conexión: {0}".format(ex))
+
+
+
+
+    # FUNCIONES AUXILIARES
+    def correct_password(self, password, userName):
+        same = False
+        encrypted = self.get_encryptedPassword(userName)
+
+        if check_password_hash(encrypted,password):
+            same = True
+
+        return same
+
+    def get_encryptedPassword(self,name):
+        password = self.getUsuario(name)
+        return password[1]
+
+    def existeUsuario(self, userName):
+        usuario_bd = self.getUsuario(userName)
+
+        if usuario_bd is None:
+            return False
+
+        return True
 
 
 

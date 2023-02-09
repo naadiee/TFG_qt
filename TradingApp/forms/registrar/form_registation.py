@@ -40,7 +40,6 @@ class FormRegister(FormRegisterView, QMainWindow):
         password_entry = self.ventana.password_rgs.text()
         passwordConfir_entry = self.ventana.passwordConfir_rgs.text()
 
-
         if (password_entry != passwordConfir_entry):
             status = False
             self.ventana.passDiferente_incorrecto.setText('Las contraseñas no coinciden')

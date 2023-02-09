@@ -16,7 +16,7 @@ class FormLogin(FormLoginView, QMainWindow):
         self.ui.setupUi(self) # la establecemos
         self.setWindowTitle("Login")
         self.ventana = FormRegister()
-        self.panel = MainPanel()
+       # self.panel = MainPanel()
 
        # Acciones de los botones: Ininio sesion y registrar
         self.ui.login_bt.clicked.connect(self.verificar)
@@ -29,8 +29,12 @@ class FormLogin(FormLoginView, QMainWindow):
         passw_entry = self.ui.password.text()
 
         if self.correctUser(user_entry) and self.correctPassword(passw_entry, user_entry):
+            self.panel = MainPanel(user_entry)
+            #self.panel.setUserName(user_entry)
             self.hide()
-            self.mainWindow()
+            self.panel.show()
+            #self.mainWindow()
+
         else:
             self.ui.contrasena_incorrecta.setText('Contraseña incorrecta')
             self.ui.usuario_incorrecto.setText('Usuario incorrecto')
@@ -53,7 +57,7 @@ class FormLogin(FormLoginView, QMainWindow):
 
         return same
 
-    def progressBarview(self):
+    def progressBarview(self): # No terminado
         for i in range(0,99):
             time.sleep(0.02)
             #self.ui.progressBar.setValue(i)
@@ -63,5 +67,5 @@ class FormLogin(FormLoginView, QMainWindow):
         #self.ventana = FormRegister()
         self.ventana.show()
 
-    def mainWindow(self):
-        self.panel.show()
+    #def mainWindow(self):
+     #   self.panel.show()

@@ -7,20 +7,22 @@ from masterPanel.trading import Trading
 from masterPanel.historial import Historial
 from PySide2 import QtCore
 from PySide2.QtCore import QPropertyAnimation
+from PySide2 import QtGui, QtWidgets
 
 
 class MainPanel(MainPanelView, QMainWindow):
-    def __init__(self):
+    def __init__(self, userName):
         #self.dao = DB_DAO()
         super().__init__()
+        self.userName = userName
         self.mainWindow = MainPanelView()
         self.mainWindow.setupUi(self)
         self.setWindowTitle("TradingApp")
-        self.perfil = Perfil(self.mainWindow)
         self.admin = Admin(self.mainWindow)
         self.info = Informacion(self.mainWindow)
         self.trading = Trading(self.mainWindow)
         self.historial = Historial(self.mainWindow)
+        self.perfil = Perfil(self.mainWindow, self.userName)
 
         # Pagina Inicio
         self.mainWindow.inicio_bt.clicked.connect(
@@ -29,8 +31,7 @@ class MainPanel(MainPanelView, QMainWindow):
 
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
-
-
+        self.mainWindow.newPasswordConfirm_perfil_tab
 
 
 
@@ -50,3 +51,11 @@ class MainPanel(MainPanelView, QMainWindow):
             self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animacion.start()
 
+
+    def setUserName(self, name):
+        self.userName = name
+    def getUserName(self):
+        return self.userName
+
+    def printName(self):
+        print(self.getUserName())
