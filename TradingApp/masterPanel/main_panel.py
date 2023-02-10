@@ -31,8 +31,6 @@ class MainPanel(MainPanelView, QMainWindow):
 
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
-        self.mainWindow.newPasswordConfirm_perfil_tab
-
 
 
     def mostrarMenu(self):

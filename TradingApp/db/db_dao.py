@@ -46,8 +46,6 @@ class DB_DAO():
                     sql = "DELETE FROM usuarios WHERE nombre= %s "
                     cursor.execute(sql, [userName])
                     self.conexion.commit() # Commit se usa para confirmar lo que estamos ejecutando
-                    print("Registro eliminado correctamente")
-
                 except Error as ex:
                     print("Error al intentar la conexión: {0}".format(ex))
                 finally:

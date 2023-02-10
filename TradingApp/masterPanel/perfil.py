@@ -12,15 +12,15 @@ class Perfil():
         self.mainWindow = panel
         self.user_id = user
 
-
-
         # Pagina perfil
         self.mainWindow.perfil_bt.clicked.connect(
             lambda: self.mainWindow.stackedWidget.setCurrentWidget(
                 self.mainWindow.page_perfil))
         # Aceptar cambiar nombre
+        #Cambiar nombres de botones un poco mierda
         self.mainWindow.aceptarUser_perfil_bt.clicked.connect(self.cambiarNombreUsuario)
         self.mainWindow.cambioPass_perfil_bt.clicked.connect(self.cambiarpassword)
+        self.mainWindow.aceptarPassworDelete_perfil_bt.clicked.connect(self.eliminarCuenta)
 
     def cambiarNombreUsuario(self):
 
@@ -52,3 +52,17 @@ class Perfil():
                 print("Contraseña incorecta")
         else:
             print("Nueva contraseña no coincide con confirmacion")
+
+    def eliminarCuenta(self):
+
+        confirm_pass = self.mainWindow.passwordConfirmDelete_tab.text()
+
+        if self.dao.correct_password(confirm_pass, self.user_id):
+            if self.mainWindow.checkBox.isChecked(): # cambiar nombre del combobox
+                self.dao.deleteUser(self.user_id)
+                print("Se ha eliminado la cuenta con exito")
+            else:
+                print("No se ha marcado la casilla")
+        else:
+            print("Contraseña incorrecta")
+
