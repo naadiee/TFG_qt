@@ -32,6 +32,8 @@ class MainPanel(MainPanelView, QMainWindow):
         # Menu dinamico -> mostrar o ocultar
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
 
+        # Ayuda
+
 
     def mostrarMenu(self):
         if True:

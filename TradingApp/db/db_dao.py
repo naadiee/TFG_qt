@@ -22,6 +22,7 @@ class DB_DAO():
                 sql = "INSERT INTO usuarios (nombre, password) VALUES ('{0}', '{1}')"
                 cursor.execute(sql.format(str(usuario[0]), usuario[1]))
                 self.conexion.commit()
+                cursor.close()
                 print("¡Usuario Registrado!\n")
             except Error as ex:
                     print("Error al intentar la conexión: {0}".format(ex))
@@ -33,6 +34,7 @@ class DB_DAO():
                 sql = "SELECT * FROM usuarios where nombre = %s"
                 cursor.execute(sql, [name])
                 resultado = cursor.fetchone()
+                cursor.close()
                 return resultado
             except Error as ex:
                 print("Error al intentar la conexión: {0}".format(ex))
@@ -46,12 +48,11 @@ class DB_DAO():
                     sql = "DELETE FROM usuarios WHERE nombre= %s "
                     cursor.execute(sql, [userName])
                     self.conexion.commit() # Commit se usa para confirmar lo que estamos ejecutando
+                    cursor.close()
+                    print("Usuario Elimindo")
                 except Error as ex:
                     print("Error al intentar la conexión: {0}".format(ex))
-                finally:
-                    if self.conexion.is_connected():
-                        self.conexion.close() # Cerramos la conexión
-
+              
 
     def cambiarNombre(self, newName, odlName):
         if self.conexion.is_connected():
@@ -60,6 +61,7 @@ class DB_DAO():
                 sql = "UPDATE usuarios SET nombre = %s WHERE nombre = %s "
                 cursor.execute(sql, [newName, odlName])
                 self.conexion.commit()
+                cursor.close()
             except Error as ex:
                 print("Error al intentar la conexión: {0}".format(ex))
 
@@ -71,11 +73,25 @@ class DB_DAO():
                 sql = "UPDATE usuarios SET password = %s WHERE nombre = %s "
                 cursor.execute(sql, [newPass, userName])
                 self.conexion.commit()
+                cursor.close()
+            except Error as ex:
+                print("Error al intentar la conexión: {0}".format(ex))
+
+    def mostrarUsuarios(self):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "SELECT nombre FROM usuarios"
+                cursor.execute(sql)
+                resultado = cursor.fetchall()
+                cursor.close()
+                return resultado
             except Error as ex:
                 print("Error al intentar la conexión: {0}".format(ex))
 
 
 
+    # SELECT nombre FROM usuarios
 
     # FUNCIONES AUXILIARES
     def correct_password(self, password, userName):

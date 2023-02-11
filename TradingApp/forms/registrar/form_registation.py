@@ -30,9 +30,12 @@ class FormRegister(FormRegisterView, QMainWindow):
                 self.dao.registrarUsuario([userName_entry, encrypted_password])
                 print("Se ha registrado el usuario")
                 self.ventana.registroOK_label.setText('Se ha registrado con exito')
-                #time.sleep(4)
-                #self.ventana.registroOK_label.setText('')
+                self.ventana.usuario_rgs.clear()
+                self.ventana.password_rgs.clear()
+                self.ventana.passwordConfir_rgs.clear()
+
                 self.hide()
+        self.ventana.registroOK_label.setText(' ')
 
     def isConfirmationPassword(self):
         status: bool = True

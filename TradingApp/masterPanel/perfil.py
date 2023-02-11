@@ -32,6 +32,8 @@ class Perfil():
                 self.dao.cambiarNombre(nuevo_user, self.user_id)
                 self.user_id = nuevo_user
                 print("Nombre de usuario cambiado")
+                self.mainWindow.usuarioNuevo_tab.clear()
+                self.mainWindow.passwordConfirm_tab.clear()
             else:
                 print("contraseña incorecta")
         else:
@@ -48,6 +50,10 @@ class Perfil():
                 encrypted_pass = generate_password_hash(new_pass, 'sha256')
                 self.dao.cambiarPasword(encrypted_pass, self.user_id)
                 print("contraseña cambiada correctamente")
+                self.mainWindow.oldPasword_perfil_tab.clear()
+                self.mainWindow.newPassword_perfil_tab.clear()
+                self.mainWindow.newPasswordConfirm_perfil_tab.clear()
+
             else:
                 print("Contraseña incorecta")
         else:
@@ -61,6 +67,7 @@ class Perfil():
             if self.mainWindow.checkBox.isChecked(): # cambiar nombre del combobox
                 self.dao.deleteUser(self.user_id)
                 print("Se ha eliminado la cuenta con exito")
+                self.mainWindow.passwordConfirmDelete_tab.clear()
             else:
                 print("No se ha marcado la casilla")
         else:

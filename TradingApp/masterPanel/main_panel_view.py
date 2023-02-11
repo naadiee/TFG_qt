@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowETXWGK.ui'
+## Form generated from reading UI file 'main_windowHUVVDZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -917,9 +917,9 @@ class MainPanelView(object):
         self.tabWidget_perfil.addTab(self.password_tab, "")
         self.delete_tab = QWidget()
         self.delete_tab.setObjectName(u"delete_tab")
-        self.checkBox = QCheckBox(self.delete_tab)
-        self.checkBox.setObjectName(u"checkBox")
-        self.checkBox.setGeometry(QRect(320, 80, 111, 21))
+        self.delete_box = QCheckBox(self.delete_tab)
+        self.delete_box.setObjectName(u"delete_box")
+        self.delete_box.setGeometry(QRect(320, 80, 111, 21))
         self.passwordConfirmDelete_tab = QLineEdit(self.delete_tab)
         self.passwordConfirmDelete_tab.setObjectName(u"passwordConfirmDelete_tab")
         self.passwordConfirmDelete_tab.setGeometry(QRect(470, 150, 231, 31))
@@ -1141,6 +1141,7 @@ class MainPanelView(object):
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.addItem("")
+        self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.setObjectName(u"comboBox_addIndex_admin")
         self.comboBox_addIndex_admin.setGeometry(QRect(340, 80, 221, 41))
         font5 = QFont()
@@ -1224,6 +1225,129 @@ class MainPanelView(object):
         self.tabWidget.addTab(self.add_index_admin_tab, "")
         self.usr_ajustes_admin_tab = QWidget()
         self.usr_ajustes_admin_tab.setObjectName(u"usr_ajustes_admin_tab")
+        self.tableWidget = QTableWidget(self.usr_ajustes_admin_tab)
+        if (self.tableWidget.columnCount() < 1):
+            self.tableWidget.setColumnCount(1)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget.setGeometry(QRect(30, 30, 351, 231))
+        self.aactualizar_admin_bt = QPushButton(self.usr_ajustes_admin_tab)
+        self.aactualizar_admin_bt.setObjectName(u"aactualizar_admin_bt")
+        self.aactualizar_admin_bt.setGeometry(QRect(510, 40, 101, 41))
+        sizePolicy.setHeightForWidth(self.aactualizar_admin_bt.sizePolicy().hasHeightForWidth())
+        self.aactualizar_admin_bt.setSizePolicy(sizePolicy)
+        palette17 = QPalette()
+        palette17.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        palette17.setBrush(QPalette.Active, QPalette.Button, brush3)
+        palette17.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette17.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette17.setBrush(QPalette.Active, QPalette.Base, brush3)
+        palette17.setBrush(QPalette.Active, QPalette.Window, brush3)
+        brush38 = QBrush(QColor(0, 0, 0, 128))
+        brush38.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette17.setBrush(QPalette.Active, QPalette.PlaceholderText, brush38)
+#endif
+        palette17.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette17.setBrush(QPalette.Inactive, QPalette.Button, brush3)
+        palette17.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette17.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette17.setBrush(QPalette.Inactive, QPalette.Base, brush3)
+        palette17.setBrush(QPalette.Inactive, QPalette.Window, brush3)
+        brush39 = QBrush(QColor(0, 0, 0, 128))
+        brush39.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette17.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush39)
+#endif
+        palette17.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette17.setBrush(QPalette.Disabled, QPalette.Button, brush3)
+        palette17.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette17.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette17.setBrush(QPalette.Disabled, QPalette.Base, brush3)
+        palette17.setBrush(QPalette.Disabled, QPalette.Window, brush3)
+        brush40 = QBrush(QColor(0, 0, 0, 128))
+        brush40.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette17.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush40)
+#endif
+        self.aactualizar_admin_bt.setPalette(palette17)
+        self.aactualizar_admin_bt.setFont(font1)
+        self.aactualizar_admin_bt.setLayoutDirection(Qt.LeftToRight)
+        self.aactualizar_admin_bt.setStyleSheet(u"QPushButton{\n"
+"\n"
+"	background-color: rgb(33, 142, 36);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #ffffff\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(27, 86, 21);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #000000\n"
+"}\n"
+"")
+        self.delete_admin_bt = QPushButton(self.usr_ajustes_admin_tab)
+        self.delete_admin_bt.setObjectName(u"delete_admin_bt")
+        self.delete_admin_bt.setGeometry(QRect(510, 100, 101, 41))
+        sizePolicy.setHeightForWidth(self.delete_admin_bt.sizePolicy().hasHeightForWidth())
+        self.delete_admin_bt.setSizePolicy(sizePolicy)
+        palette18 = QPalette()
+        palette18.setBrush(QPalette.Active, QPalette.WindowText, brush2)
+        brush41 = QBrush(QColor(212, 0, 15, 255))
+        brush41.setStyle(Qt.SolidPattern)
+        palette18.setBrush(QPalette.Active, QPalette.Button, brush41)
+        palette18.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette18.setBrush(QPalette.Active, QPalette.ButtonText, brush2)
+        palette18.setBrush(QPalette.Active, QPalette.Base, brush41)
+        palette18.setBrush(QPalette.Active, QPalette.Window, brush41)
+        brush42 = QBrush(QColor(0, 0, 0, 128))
+        brush42.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette18.setBrush(QPalette.Active, QPalette.PlaceholderText, brush42)
+#endif
+        palette18.setBrush(QPalette.Inactive, QPalette.WindowText, brush2)
+        palette18.setBrush(QPalette.Inactive, QPalette.Button, brush41)
+        palette18.setBrush(QPalette.Inactive, QPalette.Text, brush2)
+        palette18.setBrush(QPalette.Inactive, QPalette.ButtonText, brush2)
+        palette18.setBrush(QPalette.Inactive, QPalette.Base, brush41)
+        palette18.setBrush(QPalette.Inactive, QPalette.Window, brush41)
+        brush43 = QBrush(QColor(0, 0, 0, 128))
+        brush43.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette18.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush43)
+#endif
+        palette18.setBrush(QPalette.Disabled, QPalette.WindowText, brush2)
+        palette18.setBrush(QPalette.Disabled, QPalette.Button, brush41)
+        palette18.setBrush(QPalette.Disabled, QPalette.Text, brush2)
+        palette18.setBrush(QPalette.Disabled, QPalette.ButtonText, brush2)
+        palette18.setBrush(QPalette.Disabled, QPalette.Base, brush41)
+        palette18.setBrush(QPalette.Disabled, QPalette.Window, brush41)
+        brush44 = QBrush(QColor(0, 0, 0, 128))
+        brush44.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette18.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush44)
+#endif
+        self.delete_admin_bt.setPalette(palette18)
+        self.delete_admin_bt.setFont(font1)
+        self.delete_admin_bt.setLayoutDirection(Qt.LeftToRight)
+        self.delete_admin_bt.setStyleSheet(u"QPushButton{\n"
+"		\n"
+"	background-color: rgb(212, 0, 15);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #ffffff\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"		\n"
+"	background-color: rgb(153, 0, 11);\n"
+"	font: 75 14pt \"Arial\";\n"
+"	border: 2px solid #000000\n"
+"}\n"
+"")
         self.tabWidget.addTab(self.usr_ajustes_admin_tab, "")
         self.stackedWidget.addWidget(self.page_admin)
 
@@ -1240,7 +1364,7 @@ class MainPanelView(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget_perfil.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         self.comboBox_addIndex_admin.setCurrentIndex(0)
 
 
@@ -1303,7 +1427,7 @@ class MainPanelView(object):
         self.passDiferente_incorrecto_perfil_tab.setText("")
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Cambiar contrase\u00f1a de usuario", None))
         self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.password_tab), QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
-        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
+        self.delete_box.setText(QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
         self.passwordConfirmDelete_tab.setPlaceholderText("")
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
         self.aceptarPassworDelete_perfil_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
@@ -1311,19 +1435,24 @@ class MainPanelView(object):
         self.noCheck_delete_tab.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Eliminar cuenta ", None))
         self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.delete_tab), QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
-        self.comboBox_addIndex_admin.setItemText(0, QCoreApplication.translate("MainWindow", u"TSLA (Tesla)", None))
-        self.comboBox_addIndex_admin.setItemText(1, QCoreApplication.translate("MainWindow", u"COIN (Coinbase)", None))
-        self.comboBox_addIndex_admin.setItemText(2, QCoreApplication.translate("MainWindow", u"NFLX (Netflix)", None))
-        self.comboBox_addIndex_admin.setItemText(3, QCoreApplication.translate("MainWindow", u"META (Meta Plataforms)", None))
-        self.comboBox_addIndex_admin.setItemText(4, QCoreApplication.translate("MainWindow", u"NIO (Nio Inc)", None))
-        self.comboBox_addIndex_admin.setItemText(5, QCoreApplication.translate("MainWindow", u"NVDA (NVDIA Corp)", None))
-        self.comboBox_addIndex_admin.setItemText(6, QCoreApplication.translate("MainWindow", u"NKE (Nike)", None))
-        self.comboBox_addIndex_admin.setItemText(7, QCoreApplication.translate("MainWindow", u"AMZN (Amazon)", None))
-        self.comboBox_addIndex_admin.setItemText(8, QCoreApplication.translate("MainWindow", u"BA (Boeing)", None))
+        self.comboBox_addIndex_admin.setItemText(0, QCoreApplication.translate("MainWindow", u"Seleccione un indice", None))
+        self.comboBox_addIndex_admin.setItemText(1, QCoreApplication.translate("MainWindow", u"TSLA (Tesla)", None))
+        self.comboBox_addIndex_admin.setItemText(2, QCoreApplication.translate("MainWindow", u"COIN (Coinbase)", None))
+        self.comboBox_addIndex_admin.setItemText(3, QCoreApplication.translate("MainWindow", u"NFLX (Netflix)", None))
+        self.comboBox_addIndex_admin.setItemText(4, QCoreApplication.translate("MainWindow", u"META (Meta Plataforms)", None))
+        self.comboBox_addIndex_admin.setItemText(5, QCoreApplication.translate("MainWindow", u"NIO (Nio Inc)", None))
+        self.comboBox_addIndex_admin.setItemText(6, QCoreApplication.translate("MainWindow", u"NVDA (NVDIA Corp)", None))
+        self.comboBox_addIndex_admin.setItemText(7, QCoreApplication.translate("MainWindow", u"NKE (Nike)", None))
+        self.comboBox_addIndex_admin.setItemText(8, QCoreApplication.translate("MainWindow", u"AMZN (Amazon)", None))
+        self.comboBox_addIndex_admin.setItemText(9, QCoreApplication.translate("MainWindow", u"BA (Boeing)", None))
 
         self.aceptarAddIndex_admin_bt_tab.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"A\u00f1adir \u00edndice", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.add_index_admin_tab), QCoreApplication.translate("MainWindow", u"Agregar indice", None))
+        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
+        self.aactualizar_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
+        self.delete_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Elimnar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.usr_ajustes_admin_tab), QCoreApplication.translate("MainWindow", u"Usuarios", None))
     # retranslateUi
 
