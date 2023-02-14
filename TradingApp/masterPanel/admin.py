@@ -27,7 +27,6 @@ class Admin():
         print(seleeccion + " = ", indexSeleccion)
 
     def mostrarUsuarios(self):
-        #no se porque peta al vovler a dar a actualizar
         datos = self.dao.mostrarUsuarios()
         totalusers = len(datos)
         self.mainWindow.tableWidget.setRowCount(totalusers)

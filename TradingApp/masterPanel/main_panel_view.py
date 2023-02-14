@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowHUVVDZ.ui'
+## Form generated from reading UI file 'main_windowDCgNYg.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -310,7 +310,7 @@ class MainPanelView(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.label_2 = QLabel(self.page_info)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(237, 0, 17);")
+        self.label_2.setStyleSheet(u"color: rgba(0, 0, 0, 240);")
         self.label_2.setTextFormat(Qt.MarkdownText)
         self.label_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
         self.label_2.setWordWrap(True)
@@ -319,7 +319,7 @@ class MainPanelView(object):
 
         self.label_3 = QLabel(self.page_info)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"color: rgb(237, 0, 17);")
+        self.label_3.setStyleSheet(u"color: rgba(0, 0, 0, 240);")
         self.label_3.setTextFormat(Qt.MarkdownText)
         self.label_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
         self.label_3.setWordWrap(True)
@@ -1364,7 +1364,7 @@ class MainPanelView(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget_perfil.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.comboBox_addIndex_admin.setCurrentIndex(0)
 
 
@@ -1385,28 +1385,26 @@ class MainPanelView(object):
         self.inicio_label.setText("")
         self.trading_bt_pg.setText(QCoreApplication.translate("MainWindow", u"trading", None))
         self.historial_bt_pg.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"## Casa\n"
-"### Subt\u00edtulo\n"
-"Este es un ejemplo de texto que da entrada a una lista gen\u00e9rica de elementos:\n"
-"- Elemento 1\n"
-"- Elemento 2\n"
-"- Elemento 3\n"
-"Este es un ejemplo de texto que da entrada a una lista numerada:\n"
-"1. Elemento 1\n"
-"2. Elemento 2\n"
-"3. Elemento 3\n"
-"Al texto en Markdown puedes a\u00f1adirle formato como **negrita** o *cursiva* de una manera muy sencilla.", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"## Casa\n"
-"### Subt\u00edtulo\n"
-"Este es un ejemplo de texto que da entrada a una lista gen\u00e9rica de elementos:\n"
-"- Elemento 1\n"
-"- Elemento 2\n"
-"- Elemento 3\n"
-"Este es un ejemplo de texto que da entrada a una lista numerada:\n"
-"1. Elemento 1\n"
-"2. Elemento 2\n"
-"3. Elemento 3\n"
-"Al texto en Markdown puedes a\u00f1adirle formato como **negrita** o *cursiva* de una manera muy sencilla.", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"### RSI (Relative Strenght Index): \n"
+"Indicador de tipo oscilador que refleja la fuerza relativa de los movimientos alcista en comparaci\u00f3n de los movimientos bajistas. \n"
+"Es un indicador que muestra los niveles de sobrecompra y los niveles de sobreventa: \n"
+"- Sobrecompra: si est\u00e1 alto hay una alta probabilidad del que precio caida ya que han habido muchas compras. \n"
+"- Sobreventa: si est\u00e1 bajo, la probabilidad de que el precio suba es alta. Se ha vendido mucho, cuanto mayor sea este nivel mayor ser\u00e1 la probabilidad de que el precio revote temporalmente. \n"
+"\n"
+"Niveles clave: \n"
+"- Sobrecompra: 70 puntos, empieza la zona de sobrecompra. Cuando mas alto sea m\u00e1s compras estan habiendo. Los que compraron en niveles bajos empezaran a cerrar operaciones haciendo que el impulso se agote llevando a que el precio baje. \n"
+"- Sobreventa: 30 punto, empieza la zona de sobreventa. A medida que este numero disminuye la sobreventa aumenta. El precio pronto rebotara y dar\u00e1 un inmpuls"
+                        "o al alza temporal, tependideno de mas factores sabremos si es una correcci\u00f3n para seguir caendo. ", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"### MACD\n"
+"Indicador tecnico que mide la fortaleza del momiviento del precio \n"
+"\n"
+"### Media Movil \n"
+"Hay dos tipos: \n"
+"- **Media movil Simple (SMA)**: realiza una media ponderada con los precios de cierre, durante un periodo que nosootros determinamos. SMA 20 coje las ultimas 20 velas y saca la media de precios. \n"
+"- **Media movil exponencial (EMA)**: de la mimsa forma que la SMA saca un precio medio pero en este caso da mas importancia a los valores mas cercanos en el tiempo. \n"
+"\n"
+"### Volumen \n"
+"Hace referencia al n\u00famero de contratos negociados en un periodo de tiempo concreto. Cuando el volumen aumenta significa que los traders tienen interes en el movimiento que el precio est\u00e1 llevando a cabo", None))
         self.aceptarUser_perfil_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.passwordConfirm_tab.setPlaceholderText("")
         self.usuarioNuevo_tab.setPlaceholderText("")

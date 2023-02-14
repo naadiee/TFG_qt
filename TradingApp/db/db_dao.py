@@ -52,7 +52,7 @@ class DB_DAO():
                     print("Usuario Elimindo")
                 except Error as ex:
                     print("Error al intentar la conexión: {0}".format(ex))
-              
+
 
     def cambiarNombre(self, newName, odlName):
         if self.conexion.is_connected():
