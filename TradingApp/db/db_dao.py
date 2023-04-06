@@ -103,7 +103,7 @@ class DB_DAO():
 
         return same
 
-    def get_encryptedPassword(self,name):
+    def get_encryptedPassword(self, name):
         password = self.getUsuario(name)
         return password[1]
 
@@ -115,6 +115,36 @@ class DB_DAO():
 
         return True
 
+    def registrarActivo(self, nombre, tiempos):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "INSERT INTO asset (nombre, 1min, 5min, 15min, 30min, 45min, 60min, daily) VALUES ('{0}', '{1}', '{2}', '{3}','{4}', '{5}', '{6}', '{7}')"
+                cursor.execute(sql.format(str(nombre), tiempos[0], tiempos[1],tiempos[2], tiempos[3], tiempos[4], tiempos[5], tiempos[6]))
+                self.conexion.commit()
+                cursor.close()
+                print("¡added asset!\n")
+            except Error as ex:
+                    print("Error al intentar la conexión: {0}".format(ex))
 
+    def setSaldo(self, cantidad, userName):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "UPDATE usuarios SET saldo = '{0}' WHERE nombre = '{1}' "
+                cursor.execute(sql.format(cantidad, str(userName)))
+                self.conexion.commit()
+                cursor.close()
+            except Error as ex:
+                print("Error al intentar la conexión: {0}".format(ex))
 
-
+    def setExperiencia(self, exp, userName):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sql = "UPDATE usuarios SET experiencia = '{0}' WHERE nombre = '{1}' "
+                cursor.execute(sql.format(exp, str(userName)))
+                self.conexion.commit()
+                cursor.close()
+            except Error as ex:
+                print("Error al intentar la conexión: {0}".format(ex))

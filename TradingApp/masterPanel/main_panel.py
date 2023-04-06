@@ -18,11 +18,17 @@ class MainPanel(MainPanelView, QMainWindow):
         self.mainWindow = MainPanelView()
         self.mainWindow.setupUi(self)
         self.setWindowTitle("TradingApp")
-        self.admin = Admin(self.mainWindow)
+        if self.userName == "marlon":
+            self.admin = Admin(self.mainWindow)
+        else:
+            self.mainWindow.admin_bt.hide()
+            self.mainWindow.admin_bt.setEnabled(False)
+
         self.info = Informacion(self.mainWindow)
         self.trading = Trading(self.mainWindow)
         self.historial = Historial(self.mainWindow)
         self.perfil = Perfil(self.mainWindow, self.userName)
+
 
         # Pagina Inicio
         self.mainWindow.inicio_bt.clicked.connect(
@@ -33,6 +39,7 @@ class MainPanel(MainPanelView, QMainWindow):
         self.mainWindow.munu_bt.clicked.connect(self.mostrarMenu)
 
         # Ayuda
+
 
 
     def mostrarMenu(self):
@@ -51,9 +58,9 @@ class MainPanel(MainPanelView, QMainWindow):
             self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animacion.start()
 
-
     def setUserName(self, name):
         self.userName = name
+
     def getUserName(self):
         return self.userName
 

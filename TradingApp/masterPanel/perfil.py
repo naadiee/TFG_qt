@@ -21,6 +21,17 @@ class Perfil():
         self.mainWindow.aceptarUser_perfil_bt.clicked.connect(self.cambiarNombreUsuario)
         self.mainWindow.cambioPass_perfil_bt.clicked.connect(self.cambiarpassword)
         self.mainWindow.aceptarPassworDelete_perfil_bt.clicked.connect(self.eliminarCuenta)
+        self.mainWindow.aceptarCuenta_perfil_bt.clicked.connect(self.modificarDatosCuenta)
+
+        #ComboBox seleccion de nivel
+        self.mainWindow.comboBox_selecLevel_perfil.currentIndexChanged.connect(self.seleccionarNivelUsuario)
+
+
+
+        #SpinBox saldo get value when stop pushing
+        self.mainWindow.spinBox_selectSaldo_perfil.editingFinished.connect(self.getSbxSaldo)
+
+
 
     def cambiarNombreUsuario(self):
 
@@ -64,7 +75,7 @@ class Perfil():
         confirm_pass = self.mainWindow.passwordConfirmDelete_tab.text()
 
         if self.dao.correct_password(confirm_pass, self.user_id):
-            if self.mainWindow.checkBox.isChecked(): # cambiar nombre del combobox
+            if self.mainWindow.delete_box.isChecked(): # cambiar nombre del combobox
                 self.dao.deleteUser(self.user_id)
                 print("Se ha eliminado la cuenta con exito")
                 self.mainWindow.passwordConfirmDelete_tab.clear()
@@ -73,3 +84,34 @@ class Perfil():
         else:
             print("Contraseña incorrecta")
 
+    def getSbxSaldo(self):
+        saldo = int(self.mainWindow.spinBox_selectSaldo_perfil.value())
+        return saldo
+
+    def modificarSaldo(self):
+        saldo = self.getSbxSaldo()
+        if saldo > 0:
+            self.dao.setSaldo(saldo, self.user_id)
+            self.mainWindow.spinBox_selectSaldo_perfil.clearFocus()
+            self.mainWindow.spinBox_selectSaldo_perfil.setValue(0)
+
+    def modificarNivel(self):
+        cbx = self.seleccionarNivelUsuario()
+        index = cbx[0]
+        nivel = cbx[1]
+
+        if index > 0:
+            self.dao.setExperiencia(index, self.user_id)
+            self.mainWindow.comboBox_selecLevel_perfil.setCurrentIndex(0)
+
+
+    def seleccionarNivelUsuario(self):
+        indexSeleccion = self.mainWindow.comboBox_selecLevel_perfil.currentIndex()
+        seleeccion = self.mainWindow.comboBox_selecLevel_perfil.itemText(indexSeleccion)
+
+        return [indexSeleccion, seleeccion]
+
+
+    def modificarDatosCuenta(self):
+        self.modificarNivel()
+        self.modificarSaldo()
