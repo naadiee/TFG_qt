@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowaSOITY.ui'
+## Form generated from reading UI file 'main_windowvzrNFa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -526,7 +526,7 @@ class MainPanelView(object):
 
         self.verticalLayout_5.addWidget(self.tituloWidget)
 
-        self.verticalSpacer_4 = QSpacerItem(20, 43, QSizePolicy.Minimum, QSizePolicy.Preferred)
+        self.verticalSpacer_4 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
 
         self.verticalLayout_5.addItem(self.verticalSpacer_4)
 
@@ -536,12 +536,12 @@ class MainPanelView(object):
         self.widget_2.setMaximumSize(QSize(461, 51))
         self.label_8 = QLabel(self.widget_2)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(0, 10, 201, 31))
+        self.label_8.setGeometry(QRect(10, 10, 201, 31))
         self.label_8.setMinimumSize(QSize(201, 31))
         self.label_8.setMaximumSize(QSize(201, 31))
         self.label_8.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_8.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.usuarioNuevo_tab = QLineEdit(self.widget_2)
@@ -716,10 +716,10 @@ class MainPanelView(object):
         self.passwordConfirm_tab.setAlignment(Qt.AlignCenter)
         self.label_9 = QLabel(self.widget_5)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(0, 10, 201, 31))
+        self.label_9.setGeometry(QRect(10, 10, 201, 31))
         self.label_9.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_9.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -791,7 +791,7 @@ class MainPanelView(object):
         self.widget = QWidget(self.frame)
         self.widget.setObjectName(u"widget")
         self.widget.setMinimumSize(QSize(461, 51))
-        self.widget.setMaximumSize(QSize(461, 51))
+        self.widget.setMaximumSize(QSize(461, 58))
         self.horizontalLayout_13 = QHBoxLayout(self.widget)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
         self.horizontalLayout_13.setContentsMargins(9, -1, -1, 9)
@@ -936,7 +936,7 @@ class MainPanelView(object):
         self.label_13.setMaximumSize(QSize(201, 31))
         self.label_13.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_13.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.oldPasword_perfil_tab = QLineEdit(self.widget_8)
@@ -1055,7 +1055,7 @@ class MainPanelView(object):
         self.label_14.setMaximumSize(QSize(201, 31))
         self.label_14.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_14.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.newPassword_perfil_tab = QLineEdit(self.widget_11)
@@ -1122,7 +1122,7 @@ class MainPanelView(object):
         self.label_15.setMaximumSize(QSize(201, 31))
         self.label_15.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_15.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.newPasswordConfirm_perfil_tab = QLineEdit(self.widget_12)
@@ -1237,7 +1237,7 @@ class MainPanelView(object):
         self.widget_15 = QWidget(self.frame_6)
         self.widget_15.setObjectName(u"widget_15")
         self.widget_15.setMinimumSize(QSize(461, 51))
-        self.widget_15.setMaximumSize(QSize(461, 51))
+        self.widget_15.setMaximumSize(QSize(461, 58))
         self.horizontalLayout_19 = QHBoxLayout(self.widget_15)
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
         self.horizontalSpacer_19 = QSpacerItem(333, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -1365,7 +1365,7 @@ class MainPanelView(object):
 
         self.verticalLayout_4.addWidget(self.frameTitilo)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 90, QSizePolicy.Minimum, QSizePolicy.Preferred)
+        self.verticalSpacer_2 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
 
         self.verticalLayout_4.addItem(self.verticalSpacer_2)
 
@@ -1439,6 +1439,10 @@ class MainPanelView(object):
 
         self.verticalLayout_4.addWidget(self.frame_3)
 
+        self.verticalSpacer_16 = QSpacerItem(20, 35, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_16)
+
         self.widget_20 = QWidget(self.frame_8)
         self.widget_20.setObjectName(u"widget_20")
         self.widget_20.setMinimumSize(QSize(461, 51))
@@ -1451,7 +1455,7 @@ class MainPanelView(object):
         self.label_12.setMaximumSize(QSize(130, 33))
         self.label_12.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_12.setAlignment(Qt.AlignCenter)
 
@@ -1563,7 +1567,7 @@ class MainPanelView(object):
         self.widget_3 = QWidget(self.frame_8)
         self.widget_3.setObjectName(u"widget_3")
         self.widget_3.setMinimumSize(QSize(461, 51))
-        self.widget_3.setMaximumSize(QSize(461, 51))
+        self.widget_3.setMaximumSize(QSize(461, 58))
         self.horizontalLayout_10 = QHBoxLayout(self.widget_3)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalSpacer_5 = QSpacerItem(303, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -1692,7 +1696,7 @@ class MainPanelView(object):
 
         self.verticalLayout_8.addWidget(self.widget_16)
 
-        self.verticalSpacer_8 = QSpacerItem(20, 103, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer_8 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
 
         self.verticalLayout_8.addItem(self.verticalSpacer_8)
 
@@ -1709,7 +1713,7 @@ class MainPanelView(object):
         self.delete_box.setMaximumSize(QSize(121, 21))
         self.delete_box.setFocusPolicy(Qt.NoFocus)
         self.delete_box.setStyleSheet(u"QCheckBox{\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "	color: rgba(0, 0, 0, 240);\n"
 "}\n"
 "\n"
@@ -1773,7 +1777,7 @@ class MainPanelView(object):
         self.label_10.setMaximumSize(QSize(181, 31))
         self.label_10.setStyleSheet(u"QLabel{\n"
 "	color: rgba(0, 0, 0, 240);\n"
-"	font: 15px \"Arial\";\n"
+"	font: 16px \"Arial\";\n"
 "}")
         self.label_10.setAlignment(Qt.AlignCenter)
         self.passwordConfirmDelete_tab = QLineEdit(self.widget_9)
@@ -1886,7 +1890,7 @@ class MainPanelView(object):
         self.widget_19 = QWidget(self.frame_7)
         self.widget_19.setObjectName(u"widget_19")
         self.widget_19.setMinimumSize(QSize(461, 51))
-        self.widget_19.setMaximumSize(QSize(461, 51))
+        self.widget_19.setMaximumSize(QSize(461, 58))
         self.horizontalLayout_23 = QHBoxLayout(self.widget_19)
         self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
         self.horizontalSpacer_25 = QSpacerItem(333, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -2027,7 +2031,66 @@ class MainPanelView(object):
 "}")
         self.add_index_admin_tab = QWidget()
         self.add_index_admin_tab.setObjectName(u"add_index_admin_tab")
-        self.comboBox_addIndex_admin = QComboBox(self.add_index_admin_tab)
+        self.horizontalLayout_29 = QHBoxLayout(self.add_index_admin_tab)
+        self.horizontalLayout_29.setObjectName(u"horizontalLayout_29")
+        self.horizontalLayout_29.setContentsMargins(-1, -1, -1, 65)
+        self.horizontalSpacer_34 = QSpacerItem(200, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_29.addItem(self.horizontalSpacer_34)
+
+        self.frame_2 = QFrame(self.add_index_admin_tab)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setMinimumSize(QSize(471, 481))
+        self.frame_2.setMaximumSize(QSize(471, 481))
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_6 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.widget_22 = QWidget(self.frame_2)
+        self.widget_22.setObjectName(u"widget_22")
+        self.widget_22.setMinimumSize(QSize(461, 51))
+        self.widget_22.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_25 = QHBoxLayout(self.widget_22)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.horizontalSpacer_10 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_25.addItem(self.horizontalSpacer_10)
+
+        self.label_7 = QLabel(self.widget_22)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMinimumSize(QSize(171, 31))
+        self.label_7.setMaximumSize(QSize(171, 31))
+        self.label_7.setFont(font3)
+        self.label_7.setStyleSheet(u"color: rgb(77, 125, 238);\n"
+"font: 75 26pt \"Arial\";\n"
+"border:Noe\n"
+"")
+        self.label_7.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_25.addWidget(self.label_7)
+
+        self.horizontalSpacer_11 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_25.addItem(self.horizontalSpacer_11)
+
+
+        self.verticalLayout_6.addWidget(self.widget_22)
+
+        self.verticalSpacer_12 = QSpacerItem(20, 43, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_6.addItem(self.verticalSpacer_12)
+
+        self.widget_23 = QWidget(self.frame_2)
+        self.widget_23.setObjectName(u"widget_23")
+        self.widget_23.setMinimumSize(QSize(461, 51))
+        self.widget_23.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_26 = QHBoxLayout(self.widget_23)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.horizontalSpacer_29 = QSpacerItem(124, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_26.addItem(self.horizontalSpacer_29)
+
+        self.comboBox_addIndex_admin = QComboBox(self.widget_23)
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.addItem("")
@@ -2039,7 +2102,6 @@ class MainPanelView(object):
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.addItem("")
         self.comboBox_addIndex_admin.setObjectName(u"comboBox_addIndex_admin")
-        self.comboBox_addIndex_admin.setGeometry(QRect(370, 80, 200, 30))
         sizePolicy2.setHeightForWidth(self.comboBox_addIndex_admin.sizePolicy().hasHeightForWidth())
         self.comboBox_addIndex_admin.setSizePolicy(sizePolicy2)
         self.comboBox_addIndex_admin.setMinimumSize(QSize(142, 30))
@@ -2092,11 +2154,110 @@ class MainPanelView(object):
 "")
         self.comboBox_addIndex_admin.setEditable(False)
         self.comboBox_addIndex_admin.setInsertPolicy(QComboBox.InsertAtTop)
-        self.aceptarAddIndex_admin_bt_tab = QPushButton(self.add_index_admin_tab)
+
+        self.horizontalLayout_26.addWidget(self.comboBox_addIndex_admin)
+
+        self.horizontalSpacer_33 = QSpacerItem(124, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_26.addItem(self.horizontalSpacer_33)
+
+
+        self.verticalLayout_6.addWidget(self.widget_23)
+
+        self.verticalSpacer_11 = QSpacerItem(20, 67, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_6.addItem(self.verticalSpacer_11)
+
+        self.widget_24 = QWidget(self.frame_2)
+        self.widget_24.setObjectName(u"widget_24")
+        self.widget_24.setMinimumSize(QSize(461, 110))
+        self.widget_24.setMaximumSize(QSize(461, 110))
+        self.horizontalLayout_28 = QHBoxLayout(self.widget_24)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
+        self.horizontalSpacer_31 = QSpacerItem(106, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
+
+        self.horizontalLayout_28.addItem(self.horizontalSpacer_31)
+
+        self.min_frame = QFrame(self.widget_24)
+        self.min_frame.setObjectName(u"min_frame")
+        self.min_frame.setMinimumSize(QSize(213, 85))
+        self.min_frame.setMaximumSize(QSize(213, 85))
+        self.min_frame.setStyleSheet(u"QCheckBox{\n"
+"	font: 15px \"Arial\";\n"
+"	color: rgba(0, 0, 0, 240);\n"
+"}\n"
+"")
+        self.min_frame.setFrameShape(QFrame.StyledPanel)
+        self.min_frame.setFrameShadow(QFrame.Raised)
+        self.gridLayout = QGridLayout(self.min_frame)
+        self.gridLayout.setSpacing(0)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(8, 8, 8, 0)
+        self.cincoMin_box = QCheckBox(self.min_frame)
+        self.cincoMin_box.setObjectName(u"cincoMin_box")
+
+        self.gridLayout.addWidget(self.cincoMin_box, 0, 1, 1, 1)
+
+        self.quinceMin_box = QCheckBox(self.min_frame)
+        self.quinceMin_box.setObjectName(u"quinceMin_box")
+
+        self.gridLayout.addWidget(self.quinceMin_box, 0, 2, 1, 1)
+
+        self.treintaMin_box = QCheckBox(self.min_frame)
+        self.treintaMin_box.setObjectName(u"treintaMin_box")
+
+        self.gridLayout.addWidget(self.treintaMin_box, 1, 0, 1, 1)
+
+        self.cuarentacincoMin_box = QCheckBox(self.min_frame)
+        self.cuarentacincoMin_box.setObjectName(u"cuarentacincoMin_box")
+
+        self.gridLayout.addWidget(self.cuarentacincoMin_box, 1, 1, 1, 1)
+
+        self.daily_box = QCheckBox(self.min_frame)
+        self.daily_box.setObjectName(u"daily_box")
+
+        self.gridLayout.addWidget(self.daily_box, 2, 0, 1, 1)
+
+        self.unoMin_box = QCheckBox(self.min_frame)
+        self.unoMin_box.setObjectName(u"unoMin_box")
+
+        self.gridLayout.addWidget(self.unoMin_box, 0, 0, 1, 1)
+
+        self.sesentaMin_box = QCheckBox(self.min_frame)
+        self.sesentaMin_box.setObjectName(u"sesentaMin_box")
+
+        self.gridLayout.addWidget(self.sesentaMin_box, 1, 2, 1, 1)
+
+
+        self.horizontalLayout_28.addWidget(self.min_frame)
+
+        self.horizontalSpacer_32 = QSpacerItem(106, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
+
+        self.horizontalLayout_28.addItem(self.horizontalSpacer_32)
+
+
+        self.verticalLayout_6.addWidget(self.widget_24)
+
+        self.verticalSpacer_10 = QSpacerItem(20, 38, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_6.addItem(self.verticalSpacer_10)
+
+        self.widget_21 = QWidget(self.frame_2)
+        self.widget_21.setObjectName(u"widget_21")
+        self.widget_21.setMinimumSize(QSize(461, 58))
+        self.widget_21.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_27 = QHBoxLayout(self.widget_21)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.horizontalSpacer_30 = QSpacerItem(333, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_27.addItem(self.horizontalSpacer_30)
+
+        self.aceptarAddIndex_admin_bt_tab = QPushButton(self.widget_21)
         self.aceptarAddIndex_admin_bt_tab.setObjectName(u"aceptarAddIndex_admin_bt_tab")
-        self.aceptarAddIndex_admin_bt_tab.setGeometry(QRect(490, 360, 101, 41))
         sizePolicy.setHeightForWidth(self.aceptarAddIndex_admin_bt_tab.sizePolicy().hasHeightForWidth())
         self.aceptarAddIndex_admin_bt_tab.setSizePolicy(sizePolicy)
+        self.aceptarAddIndex_admin_bt_tab.setMinimumSize(QSize(101, 41))
+        self.aceptarAddIndex_admin_bt_tab.setMaximumSize(QSize(101, 41))
         palette19 = QPalette()
         palette19.setBrush(QPalette.Active, QPalette.WindowText, brush2)
         palette19.setBrush(QPalette.Active, QPalette.Button, brush3)
@@ -2150,80 +2311,103 @@ class MainPanelView(object):
 "	border: 2px solid #000000\n"
 "}\n"
 "")
-        self.label_7 = QLabel(self.add_index_admin_tab)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(290, 20, 341, 31))
-        self.label_7.setFont(font3)
-        self.label_7.setStyleSheet(u"color: rgb(77, 125, 238);\n"
-"font: 75 26pt \"Arial\";\n"
-"border:Noe\n"
-"")
-        self.label_7.setAlignment(Qt.AlignCenter)
-        self.min_frame = QFrame(self.add_index_admin_tab)
-        self.min_frame.setObjectName(u"min_frame")
-        self.min_frame.setGeometry(QRect(330, 250, 251, 91))
-        self.min_frame.setStyleSheet(u"QCheckBox{\n"
-"	font: 15px \"Arial\";\n"
-"	color: rgba(0, 0, 0, 240);\n"
-"}\n"
-"")
-        self.min_frame.setFrameShape(QFrame.StyledPanel)
-        self.min_frame.setFrameShadow(QFrame.Raised)
-        self.gridLayout = QGridLayout(self.min_frame)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.cincoMin_box = QCheckBox(self.min_frame)
-        self.cincoMin_box.setObjectName(u"cincoMin_box")
 
-        self.gridLayout.addWidget(self.cincoMin_box, 0, 1, 1, 1)
+        self.horizontalLayout_27.addWidget(self.aceptarAddIndex_admin_bt_tab)
 
-        self.treintaMin_box = QCheckBox(self.min_frame)
-        self.treintaMin_box.setObjectName(u"treintaMin_box")
 
-        self.gridLayout.addWidget(self.treintaMin_box, 1, 0, 1, 1)
+        self.verticalLayout_6.addWidget(self.widget_21)
 
-        self.unoMin_box = QCheckBox(self.min_frame)
-        self.unoMin_box.setObjectName(u"unoMin_box")
 
-        self.gridLayout.addWidget(self.unoMin_box, 0, 0, 1, 1)
+        self.horizontalLayout_29.addWidget(self.frame_2)
 
-        self.cuarentacincoMin_box = QCheckBox(self.min_frame)
-        self.cuarentacincoMin_box.setObjectName(u"cuarentacincoMin_box")
+        self.horizontalSpacer_35 = QSpacerItem(200, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.gridLayout.addWidget(self.cuarentacincoMin_box, 1, 1, 1, 1)
-
-        self.sesentaMin_box = QCheckBox(self.min_frame)
-        self.sesentaMin_box.setObjectName(u"sesentaMin_box")
-
-        self.gridLayout.addWidget(self.sesentaMin_box, 1, 2, 1, 1)
-
-        self.quinceMin_box = QCheckBox(self.min_frame)
-        self.quinceMin_box.setObjectName(u"quinceMin_box")
-
-        self.gridLayout.addWidget(self.quinceMin_box, 0, 2, 1, 1)
-
-        self.daily_box = QCheckBox(self.min_frame)
-        self.daily_box.setObjectName(u"daily_box")
-
-        self.gridLayout.addWidget(self.daily_box, 2, 0, 1, 1)
+        self.horizontalLayout_29.addItem(self.horizontalSpacer_35)
 
         self.tabWidget.addTab(self.add_index_admin_tab, "")
         self.usr_ajustes_admin_tab = QWidget()
         self.usr_ajustes_admin_tab.setObjectName(u"usr_ajustes_admin_tab")
-        self.tableWidget = QTableWidget(self.usr_ajustes_admin_tab)
+        self.horizontalLayout_31 = QHBoxLayout(self.usr_ajustes_admin_tab)
+        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
+        self.horizontalSpacer_38 = QSpacerItem(137, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_31.addItem(self.horizontalSpacer_38)
+
+        self.frame_9 = QFrame(self.usr_ajustes_admin_tab)
+        self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setMinimumSize(QSize(471, 481))
+        self.frame_9.setSizeIncrement(QSize(471, 481))
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.frame_9)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.widget_25 = QWidget(self.frame_9)
+        self.widget_25.setObjectName(u"widget_25")
+        self.widget_25.setMinimumSize(QSize(461, 51))
+        self.widget_25.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_30 = QHBoxLayout(self.widget_25)
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.horizontalSpacer_36 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_30.addItem(self.horizontalSpacer_36)
+
+        self.label_16 = QLabel(self.widget_25)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setMinimumSize(QSize(215, 31))
+        self.label_16.setMaximumSize(QSize(215, 31))
+        self.label_16.setFont(font3)
+        self.label_16.setStyleSheet(u"color: rgb(77, 125, 238);\n"
+"font: 75 26pt \"Arial\";\n"
+"border:Noe\n"
+"")
+        self.label_16.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_30.addWidget(self.label_16)
+
+        self.horizontalSpacer_37 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_30.addItem(self.horizontalSpacer_37)
+
+
+        self.verticalLayout_10.addWidget(self.widget_25)
+
+        self.verticalSpacer_14 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_10.addItem(self.verticalSpacer_14)
+
+        self.tableWidget = QTableWidget(self.frame_9)
         if (self.tableWidget.columnCount() < 1):
             self.tableWidget.setColumnCount(1)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setGeometry(QRect(30, 30, 351, 231))
+        self.tableWidget.setMinimumSize(QSize(450, 0))
+        self.tableWidget.setMaximumSize(QSize(450, 16777215))
         self.tableWidget.setStyleSheet(u"	color: rgb(0, 0, 0);\n"
 "	border-radius:10px;\n"
 "	font: 15px \"Arial\";")
-        self.aactualizar_admin_bt = QPushButton(self.usr_ajustes_admin_tab)
+
+        self.verticalLayout_10.addWidget(self.tableWidget)
+
+
+        self.horizontalLayout_31.addWidget(self.frame_9)
+
+        self.widget_26 = QWidget(self.usr_ajustes_admin_tab)
+        self.widget_26.setObjectName(u"widget_26")
+        self.widget_26.setMinimumSize(QSize(113, 481))
+        self.widget_26.setMaximumSize(QSize(113, 481))
+        self.verticalLayout_9 = QVBoxLayout(self.widget_26)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalSpacer_15 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_9.addItem(self.verticalSpacer_15)
+
+        self.aactualizar_admin_bt = QPushButton(self.widget_26)
         self.aactualizar_admin_bt.setObjectName(u"aactualizar_admin_bt")
-        self.aactualizar_admin_bt.setGeometry(QRect(510, 40, 101, 41))
         sizePolicy.setHeightForWidth(self.aactualizar_admin_bt.sizePolicy().hasHeightForWidth())
         self.aactualizar_admin_bt.setSizePolicy(sizePolicy)
+        self.aactualizar_admin_bt.setMinimumSize(QSize(101, 41))
+        self.aactualizar_admin_bt.setMaximumSize(QSize(101, 41))
         palette20 = QPalette()
         palette20.setBrush(QPalette.Active, QPalette.WindowText, brush2)
         palette20.setBrush(QPalette.Active, QPalette.Button, brush3)
@@ -2278,11 +2462,15 @@ class MainPanelView(object):
 "	border: 2px solid #000000\n"
 "}\n"
 "")
-        self.delete_admin_bt = QPushButton(self.usr_ajustes_admin_tab)
+
+        self.verticalLayout_9.addWidget(self.aactualizar_admin_bt)
+
+        self.delete_admin_bt = QPushButton(self.widget_26)
         self.delete_admin_bt.setObjectName(u"delete_admin_bt")
-        self.delete_admin_bt.setGeometry(QRect(510, 100, 101, 41))
         sizePolicy.setHeightForWidth(self.delete_admin_bt.sizePolicy().hasHeightForWidth())
         self.delete_admin_bt.setSizePolicy(sizePolicy)
+        self.delete_admin_bt.setMinimumSize(QSize(101, 41))
+        self.delete_admin_bt.setMaximumSize(QSize(101, 41))
         palette21 = QPalette()
         palette21.setBrush(QPalette.Active, QPalette.WindowText, brush2)
         brush54 = QBrush(QColor(212, 0, 15, 255))
@@ -2337,6 +2525,20 @@ class MainPanelView(object):
 "	border: 2px solid #000000\n"
 "}\n"
 "")
+
+        self.verticalLayout_9.addWidget(self.delete_admin_bt)
+
+        self.verticalSpacer_13 = QSpacerItem(20, 320, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_9.addItem(self.verticalSpacer_13)
+
+
+        self.horizontalLayout_31.addWidget(self.widget_26)
+
+        self.horizontalSpacer_39 = QSpacerItem(136, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_31.addItem(self.horizontalSpacer_39)
+
         self.tabWidget.addTab(self.usr_ajustes_admin_tab, "")
 
         self.horizontalLayout_8.addWidget(self.tabWidget)
@@ -2436,6 +2638,7 @@ class MainPanelView(object):
         self.contrasena_incorrecta_delete_tab.setText("")
         self.aceptarPassworDelete_perfil_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.tabWidget_perfil.setTabText(self.tabWidget_perfil.indexOf(self.delete_tab), QCoreApplication.translate("MainWindow", u"Eliminar perfil", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"A\u00f1adir \u00edndice", None))
         self.comboBox_addIndex_admin.setItemText(0, QCoreApplication.translate("MainWindow", u"Seleccione un indice", None))
         self.comboBox_addIndex_admin.setItemText(1, QCoreApplication.translate("MainWindow", u"TSLA", None))
         self.comboBox_addIndex_admin.setItemText(2, QCoreApplication.translate("MainWindow", u"COIN", None))
@@ -2447,16 +2650,16 @@ class MainPanelView(object):
         self.comboBox_addIndex_admin.setItemText(8, QCoreApplication.translate("MainWindow", u"AMZN", None))
         self.comboBox_addIndex_admin.setItemText(9, QCoreApplication.translate("MainWindow", u"BA", None))
 
-        self.aceptarAddIndex_admin_bt_tab.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"A\u00f1adir \u00edndice", None))
         self.cincoMin_box.setText(QCoreApplication.translate("MainWindow", u"5min", None))
-        self.treintaMin_box.setText(QCoreApplication.translate("MainWindow", u"30min", None))
-        self.unoMin_box.setText(QCoreApplication.translate("MainWindow", u"1min", None))
-        self.cuarentacincoMin_box.setText(QCoreApplication.translate("MainWindow", u"45min", None))
-        self.sesentaMin_box.setText(QCoreApplication.translate("MainWindow", u"60min", None))
         self.quinceMin_box.setText(QCoreApplication.translate("MainWindow", u"15min", None))
+        self.treintaMin_box.setText(QCoreApplication.translate("MainWindow", u"30min", None))
+        self.cuarentacincoMin_box.setText(QCoreApplication.translate("MainWindow", u"45min", None))
         self.daily_box.setText(QCoreApplication.translate("MainWindow", u"daily", None))
+        self.unoMin_box.setText(QCoreApplication.translate("MainWindow", u"1min", None))
+        self.sesentaMin_box.setText(QCoreApplication.translate("MainWindow", u"60min", None))
+        self.aceptarAddIndex_admin_bt_tab.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.add_index_admin_tab), QCoreApplication.translate("MainWindow", u"Agregar indice", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Eliminar  usuarios", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
         self.aactualizar_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Actualizar", None))
