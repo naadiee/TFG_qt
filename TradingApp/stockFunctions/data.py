@@ -106,6 +106,10 @@ def fullIntradayData(twoYearArr):
     return nuevo_df
 
 
+def descargarDatos(asset, timeFrame):
+    twoYearData = get2yearDataSplit(asset, timeFrame)
+    return twoYearData
+
 def cambiar_tipos_de_columnas(df, columnas, tipos_de_datos):
     """
     Esta función cambia el tipo de datos de varias columnas en un DataFrame de Pandas.
@@ -121,3 +125,34 @@ def cambiar_tipos_de_columnas(df, columnas, tipos_de_datos):
     for columna, tipo_de_dato in zip(columnas, tipos_de_datos):
         df[columna] = df[columna].astype(tipo_de_dato)
     return df
+
+def guardarDatos(asset, timeFrame):
+    historicalData = descargarDatos(asset, timeFrame)
+    historicalData[0].to_csv('data/' + asset + '_' + timeFrame + '_year1.csv', index=False)
+    historicalData[1].to_csv('data/' + asset + '_' + timeFrame + '_year2.csv', index=False)
+    print("datos guardados.... ")
+
+# -----------------------------------------------------------------------------------------------------------------------------------
+#                                                       LEER DATOS
+# -----------------------------------------------------------------------------------------------------------------------------------
+
+def readAssetData(assetName, timeFrame):
+    year1 = pd.read_csv('datos/' + assetName + '_' + timeFrame + '_year1.csv', index_col=False)
+    year2 = pd.read_csv('datos/' + assetName + '_' + timeFrame + '_year2.csv', index_col=False)
+
+    fullData = fullIntradayData([year1, year2])
+    fullData = fullData.reindex(index=fullData.index[::-1])
+
+    return fullData
+
+def upperNames(df):
+    df = df.rename(columns = {'open':'Open', 'high': 'High', 'low': 'Low', 'close': 'Close', 'volume': 'Volume'})
+    return df
+
+
+def cambiarIndexName(df, newIndexName):
+    if df.index.name != newIndexName:
+        df = df.rename_axis('date')  # 2
+
+    return df
+

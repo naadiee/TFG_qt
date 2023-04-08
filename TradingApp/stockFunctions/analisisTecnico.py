@@ -1,5 +1,6 @@
 import yfinance as yf
-
+from ta.momentum import RSIIndicator, StochasticOscillator, StochRSIIndicator
+from ta.trend import MACD
 TSLAyf = yf.Ticker("TSLA")
 precio = TSLAyf.history(period="3y")["Close"]
 
@@ -59,3 +60,38 @@ def numVecesResistenciaTocada(precios, resistencias, margen):
                 dic_resistencias[key] += 1
 
     return dic_resistencias
+
+
+def getRSI(dfClose):
+    indicator = RSIIndicator(close=dfClose["Close"], window=14, fillna=False)
+    return indicator.rsi()
+
+
+def getStoch(df):
+    indicator = StochasticOscillator(high=df["High"], low=df["Low"], close=df["Close"], window=14,
+                                                 smooth_window=3, fillna=False)
+
+    return [indicator.stoch(), indicator.stoch_signal()]
+
+
+def getStochRSI(dfClose):
+    indicator = StochRSIIndicator(close=dfClose["Close"], window=14, smooth1=3, smooth2=3, fillna=False)
+
+    return [indicator.stochrsi(), indicator.stochrsi_d(), indicator.stochrsi_k()]
+
+
+def getMACD(dfClose):
+    indicator = MACD(close=dfClose["Close"], window_slow=26, window_fast=12, window_sign=9, fillna=False)
+
+    return [indicator.macd(), indicator.macd_diff(), indicator.macd_signal()]
+
+
+def buscarVelasSegunFecha(df, fechaObjetivo):
+    year = fechaObjetivo.year
+    month = fechaObjetivo.month
+    day = fechaObjetivo.day
+
+    condicion = (df.index.year == year) & (df.index.month == month) & (df.index.day == day)
+    result = df.loc[condicion]
+
+    return result

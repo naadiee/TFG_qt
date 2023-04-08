@@ -27,11 +27,7 @@ class Admin():
 
         return [indexSeleccion, seleeccion]
 
-    def downloadData(self, asset, timeFrame):
-        priceData2years = data.get2yearDataSplit(asset, timeFrame)
-        #priceData2years30 = data.getDatosMesIntervalo(asset, '60min', 'year1month1')
 
-        return priceData2years
 
     def saveData(self):
         index, asset = self.selectStockIndex()
@@ -40,38 +36,26 @@ class Admin():
         if index > 0: # else: muestra mensaje de error "No se ha seleccionado nada"
 
             if self.mainWindow.unoMin_box.isChecked():
-                historicalData_1min = self.downloadData(asset, '1min')
-                historicalData_1min[0].to_csv('data/' + asset + '_1min_year1.csv', index=False)
-                historicalData_1min[1].to_csv('data/' + asset + '_1min_year2.csv', index=False)
+                data.guardarDatos(asset, '1min')
                 registroActivos[0] = 1
 
             if self.mainWindow.cincoMin_box.isChecked():
-                historicalData_5min = self.downloadData(asset, '5min')
-                historicalData_5min[0].to_csv('data/' + asset + '_5min_year1.csv', index=False)
-                historicalData_5min[1].to_csv('data/' + asset + '_5min_year2.csv', index=False)
+                data.guardarDatos(asset, '5min')
                 registroActivos[1] = 1
 
             if self.mainWindow.quinceMin_box.isChecked():
-                historicalData_15min = self.downloadData(asset, '15min')
-                historicalData_15min[0].to_csv('data/' + asset + '_15min_year1.csv', index=False)
-                historicalData_15min[1].to_csv('data/' + asset + '_15min_year2.csv', index=False)
+                data.guardarDatos(asset, '15min')
                 registroActivos[2] = 1
             if self.mainWindow.treintaMin_box.isChecked():
-                historicalData_30min = self.downloadData(asset, '30min')
-                historicalData_30min[0].to_csv('data/' + asset + '_30min_year1.csv', index=False)
-                historicalData_30min[1].to_csv('data/' + asset + '_30min_year2.csv', index=False)
+                data.guardarDatos(asset, '30min')
                 registroActivos[3] = 1
 
             if self.mainWindow.cuarentacincoMin_box.isChecked():
-                historicalData_45min = self.downloadData(asset, '45min')
-                historicalData_45min[0].to_csv('data/' + asset + '_45min_year1.csv', index=False)
-                historicalData_45min[1].to_csv('data/' + asset + '_45min_year2.csv', index=False)
+                data.guardarDatos(asset, '45min')
                 registroActivos[4] = 1
 
             if self.mainWindow.sesentaMin_box.isChecked():
-                historicalData_60min = self.downloadData(asset, '60min')
-                historicalData_60min[0].to_csv('data/' + asset + '_60min_year1.csv', index=False)
-                historicalData_60min[1].to_csv('data/' + asset + '_60min_year2.csv', index=False)
+                data.guardarDatos(asset, '60min')
                 registroActivos[5] = 1
 
             if self.mainWindow.daily_box.isChecked():
