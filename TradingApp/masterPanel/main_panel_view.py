@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowLHRElU.ui'
+## Form generated from reading UI file 'main_windowfRMONU.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -43,8 +43,8 @@ class MainPanelView(object):
         self.horizontalLayout_2.setContentsMargins(0, 0, 5, 0)
         self.munu_bt = QPushButton(self.frame_superior)
         self.munu_bt.setObjectName(u"munu_bt")
-        self.munu_bt.setMinimumSize(QSize(150, 35))
-        self.munu_bt.setMaximumSize(QSize(16777215, 35))
+        self.munu_bt.setMinimumSize(QSize(100, 35))
+        self.munu_bt.setMaximumSize(QSize(100, 35))
         palette = QPalette()
         brush = QBrush(QColor(77, 125, 238, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -356,6 +356,7 @@ class MainPanelView(object):
         self.page_solicitarDatos.setObjectName(u"page_solicitarDatos")
         self.horizontalLayout_40 = QHBoxLayout(self.page_solicitarDatos)
         self.horizontalLayout_40.setObjectName(u"horizontalLayout_40")
+        self.horizontalLayout_40.setContentsMargins(-1, -1, -1, 40)
         self.horizontalSpacer_52 = QSpacerItem(200, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_40.addItem(self.horizontalSpacer_52)
