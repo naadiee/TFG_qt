@@ -4,6 +4,7 @@ from ta.trend import MACD
 TSLAyf = yf.Ticker("TSLA")
 precio = TSLAyf.history(period="3y")["Close"]
 
+
 def maximos_minimosLocales(precio, ventana):
     extremos_relativos_min = []
     extremos_relativos_max = []
