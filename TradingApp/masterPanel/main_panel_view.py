@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowfRMONU.ui'
+## Form generated from reading UI file 'main_windowadiktG.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class MainPanelView(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(925, 661)
+        MainWindow.resize(1128, 685)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -672,68 +672,67 @@ class MainPanelView(object):
 
         self.horizontalLayout_39.addItem(self.horizontalSpacer_50)
 
-        self.min_frame_2 = QFrame(self.widget_33)
-        self.min_frame_2.setObjectName(u"min_frame_2")
-        self.min_frame_2.setMinimumSize(QSize(213, 85))
-        self.min_frame_2.setMaximumSize(QSize(213, 85))
-        self.min_frame_2.setStyleSheet(u"QCheckBox{\n"
-"	font: 15px \"Arial\";\n"
-"	color: rgba(0, 0, 0, 240);\n"
+        self.comboBox_selectTimeFrame = QComboBox(self.widget_33)
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.addItem("")
+        self.comboBox_selectTimeFrame.setObjectName(u"comboBox_selectTimeFrame")
+        sizePolicy1.setHeightForWidth(self.comboBox_selectTimeFrame.sizePolicy().hasHeightForWidth())
+        self.comboBox_selectTimeFrame.setSizePolicy(sizePolicy1)
+        self.comboBox_selectTimeFrame.setMinimumSize(QSize(142, 30))
+        self.comboBox_selectTimeFrame.setMaximumSize(QSize(200, 30))
+        self.comboBox_selectTimeFrame.setFont(font2)
+        self.comboBox_selectTimeFrame.setStyleSheet(u"QComboBox{\n"
+"selection-background-color: rgb(72, 125, 255);\n"
+"font: 15pt \"Arial\";\n"
+"color: rgba(0, 0, 0, 240);\n"
+"\n"
+"border: 1px solid gray;\n"
+"    border-radius: 3px;\n"
+"    padding: 1px 18px 1px 3px;\n"
+"    min-width: 7em;\n"
 "}\n"
+"\n"
+"QComboBox:editable {\n"
+"    background: white;\n"
+"}\n"
+"\n"
+"\n"
+"QComboBox:on { /* shift the text when the popup opens */\n"
+"    padding-top: 3px;\n"
+"    padding-left: 4px;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"    width: 15px;\n"
+"\n"
+" \n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"QComboBox::down-arrow:on { /* shift the arrow when popup is open */\n"
+"    top: 5px;\n"
+"    left: 5px;\n"
+"}\n"
+"\n"
 "")
-        self.min_frame_2.setFrameShape(QFrame.StyledPanel)
-        self.min_frame_2.setFrameShadow(QFrame.Raised)
-        self.gridLayout_2 = QGridLayout(self.min_frame_2)
-        self.gridLayout_2.setSpacing(0)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.gridLayout_2.setContentsMargins(8, 8, 8, 0)
-        self.cincoMin_trading_box = QCheckBox(self.min_frame_2)
-        self.cincoMin_trading_box.setObjectName(u"cincoMin_trading_box")
+        self.comboBox_selectTimeFrame.setEditable(False)
+        self.comboBox_selectTimeFrame.setInsertPolicy(QComboBox.InsertAtTop)
 
-        self.gridLayout_2.addWidget(self.cincoMin_trading_box, 0, 1, 1, 1)
+        self.horizontalLayout_39.addWidget(self.comboBox_selectTimeFrame)
 
-        self.quinceMin_trading_box = QCheckBox(self.min_frame_2)
-        self.quinceMin_trading_box.setObjectName(u"quinceMin_trading_box")
+        self.verticalSpacer_21 = QSpacerItem(20, 74, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        self.gridLayout_2.addWidget(self.quinceMin_trading_box, 0, 2, 1, 1)
-
-        self.treintaMin_trading_box = QCheckBox(self.min_frame_2)
-        self.treintaMin_trading_box.setObjectName(u"treintaMin_trading_box")
-
-        self.gridLayout_2.addWidget(self.treintaMin_trading_box, 1, 0, 1, 1)
-
-        self.cuarentacincoMin_trading_box = QCheckBox(self.min_frame_2)
-        self.cuarentacincoMin_trading_box.setObjectName(u"cuarentacincoMin_trading_box")
-
-        self.gridLayout_2.addWidget(self.cuarentacincoMin_trading_box, 1, 1, 1, 1)
-
-        self.rsi_trading_box = QCheckBox(self.min_frame_2)
-        self.rsi_trading_box.setObjectName(u"rsi_trading_box")
-
-        self.gridLayout_2.addWidget(self.rsi_trading_box, 2, 0, 1, 1)
-
-        self.unMin_trading_box = QCheckBox(self.min_frame_2)
-        self.unMin_trading_box.setObjectName(u"unMin_trading_box")
-
-        self.gridLayout_2.addWidget(self.unMin_trading_box, 0, 0, 1, 1)
-
-        self.sesentaMin_trading_box = QCheckBox(self.min_frame_2)
-        self.sesentaMin_trading_box.setObjectName(u"sesentaMin_trading_box")
-
-        self.gridLayout_2.addWidget(self.sesentaMin_trading_box, 1, 2, 1, 1)
-
-        self.stoch_trading_box = QCheckBox(self.min_frame_2)
-        self.stoch_trading_box.setObjectName(u"stoch_trading_box")
-
-        self.gridLayout_2.addWidget(self.stoch_trading_box, 2, 1, 1, 1)
-
-        self.macd_trading_box = QCheckBox(self.min_frame_2)
-        self.macd_trading_box.setObjectName(u"macd_trading_box")
-
-        self.gridLayout_2.addWidget(self.macd_trading_box, 2, 2, 1, 1)
-
-
-        self.horizontalLayout_39.addWidget(self.min_frame_2)
+        self.horizontalLayout_39.addItem(self.verticalSpacer_21)
 
         self.horizontalSpacer_51 = QSpacerItem(106, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -990,17 +989,71 @@ class MainPanelView(object):
         self.stackedWidget.addWidget(self.page_trading)
         self.page_historial = QWidget()
         self.page_historial.setObjectName(u"page_historial")
-        self.inicio_label_2 = QLabel(self.page_historial)
-        self.inicio_label_2.setObjectName(u"inicio_label_2")
-        self.inicio_label_2.setGeometry(QRect(230, 80, 450, 400))
-        self.inicio_label_2.setMinimumSize(QSize(450, 400))
-        self.inicio_label_2.setMaximumSize(QSize(450, 400))
-        self.inicio_label_2.setStyleSheet(u"border:Noe")
-        self.inicio_label_2.setFrameShadow(QFrame.Plain)
-        self.inicio_label_2.setPixmap(QPixmap(u"img/desarrollo.png"))
-        self.inicio_label_2.setScaledContents(True)
-        self.inicio_label_2.setAlignment(Qt.AlignCenter)
-        self.inicio_label_2.setIndent(0)
+        self.frame_10 = QFrame(self.page_historial)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setGeometry(QRect(255, 9, 681, 491))
+        self.frame_10.setMinimumSize(QSize(471, 481))
+        self.frame_10.setSizeIncrement(QSize(471, 481))
+        self.frame_10.setFrameShape(QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_12 = QVBoxLayout(self.frame_10)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.widget_35 = QWidget(self.frame_10)
+        self.widget_35.setObjectName(u"widget_35")
+        self.widget_35.setMinimumSize(QSize(461, 51))
+        self.widget_35.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_32 = QHBoxLayout(self.widget_35)
+        self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
+        self.horizontalSpacer_40 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_32.addItem(self.horizontalSpacer_40)
+
+        self.label_17 = QLabel(self.widget_35)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setMinimumSize(QSize(215, 31))
+        self.label_17.setMaximumSize(QSize(215, 31))
+        self.label_17.setFont(font1)
+        self.label_17.setStyleSheet(u"color: rgb(77, 125, 238);\n"
+"font: 75 26pt \"Arial\";\n"
+"border:Noe\n"
+"")
+        self.label_17.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_32.addWidget(self.label_17)
+
+        self.horizontalSpacer_41 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_32.addItem(self.horizontalSpacer_41)
+
+
+        self.verticalLayout_12.addWidget(self.widget_35)
+
+        self.verticalSpacer_20 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
+
+        self.verticalLayout_12.addItem(self.verticalSpacer_20)
+
+        self.tableWidget_2 = QTableWidget(self.frame_10)
+        if (self.tableWidget_2.columnCount() < 5):
+            self.tableWidget_2.setColumnCount(5)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.tableWidget_2.setObjectName(u"tableWidget_2")
+        self.tableWidget_2.setMinimumSize(QSize(600, 0))
+        self.tableWidget_2.setMaximumSize(QSize(600, 16777215))
+        self.tableWidget_2.setStyleSheet(u"	color: rgb(0, 0, 0);\n"
+"	border-radius:10px;\n"
+"	font: 15px \"Arial\";")
+
+        self.verticalLayout_12.addWidget(self.tableWidget_2)
+
         self.stackedWidget.addWidget(self.page_historial)
         self.page_info = QWidget()
         self.page_info.setObjectName(u"page_info")
@@ -2951,8 +3004,8 @@ class MainPanelView(object):
         self.tableWidget = QTableWidget(self.frame_9)
         if (self.tableWidget.columnCount() < 1):
             self.tableWidget.setColumnCount(1)
-        __qtablewidgetitem = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem5)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(450, 0))
         self.tableWidget.setMaximumSize(QSize(450, 16777215))
@@ -3131,8 +3184,9 @@ class MainPanelView(object):
         self.retranslateUi(MainWindow)
 
         self.comboBox_selectIndix_trading.setCurrentIndex(0)
+        self.comboBox_selectTimeFrame.setCurrentIndex(0)
         self.tabWidget_perfil.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         self.comboBox_addIndex_admin.setCurrentIndex(0)
 
 
@@ -3166,21 +3220,30 @@ class MainPanelView(object):
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"Dia inicio: ", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Tiempo de exposici\u00f3n", None))
         self.spinBox_tiempoExposicion.setSuffix(QCoreApplication.translate("MainWindow", u" dias", None))
-        self.cincoMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"5min", None))
-        self.quinceMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"15min", None))
-        self.treintaMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"30min", None))
-        self.cuarentacincoMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"45min", None))
-        self.rsi_trading_box.setText(QCoreApplication.translate("MainWindow", u"RSI", None))
-        self.unMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"1min", None))
-        self.sesentaMin_trading_box.setText(QCoreApplication.translate("MainWindow", u"60min", None))
-        self.stoch_trading_box.setText(QCoreApplication.translate("MainWindow", u"Stoch", None))
-        self.macd_trading_box.setText(QCoreApplication.translate("MainWindow", u"MACD", None))
+        self.comboBox_selectTimeFrame.setItemText(0, QCoreApplication.translate("MainWindow", u"Seleccione TimeFrame", None))
+        self.comboBox_selectTimeFrame.setItemText(1, QCoreApplication.translate("MainWindow", u"5min", None))
+        self.comboBox_selectTimeFrame.setItemText(2, QCoreApplication.translate("MainWindow", u"15min", None))
+        self.comboBox_selectTimeFrame.setItemText(3, QCoreApplication.translate("MainWindow", u"30min", None))
+        self.comboBox_selectTimeFrame.setItemText(4, QCoreApplication.translate("MainWindow", u"45min", None))
+        self.comboBox_selectTimeFrame.setItemText(5, QCoreApplication.translate("MainWindow", u"60min", None))
+        self.comboBox_selectTimeFrame.setItemText(6, QCoreApplication.translate("MainWindow", u"daily", None))
+
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Modificar saldo:", None))
         self.spinBox_cantidadPosicion_trading.setSuffix("")
         self.aceptarDatos_trading_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Resultados", None))
         self.back_resultadosTrading_bt.setText("")
-        self.inicio_label_2.setText("")
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
+        ___qtablewidgetitem = self.tableWidget_2.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
+        ___qtablewidgetitem1 = self.tableWidget_2.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Activo", None));
+        ___qtablewidgetitem2 = self.tableWidget_2.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Precio", None));
+        ___qtablewidgetitem3 = self.tableWidget_2.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Cantidad", None));
+        ___qtablewidgetitem4 = self.tableWidget_2.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"### RSI (Relative Strenght Index): \n"
 "Indicador de tipo oscilador que refleja la fuerza relativa de los movimientos alcista en comparaci\u00f3n de los movimientos bajistas. \n"
 "Es un indicador que muestra los niveles de sobrecompra y los niveles de sobreventa: \n"
@@ -3261,8 +3324,8 @@ class MainPanelView(object):
         self.aceptarAddIndex_admin_bt_tab.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.add_index_admin_tab), QCoreApplication.translate("MainWindow", u"Agregar indice", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Eliminar  usuarios", None))
-        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
+        ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
         self.aactualizar_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Actualizar", None))
         self.delete_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Elimnar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.usr_ajustes_admin_tab), QCoreApplication.translate("MainWindow", u"Usuarios", None))

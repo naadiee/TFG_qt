@@ -2,7 +2,6 @@ from forms.registrar.form_registation_view import FormRegisterView
 from werkzeug.security import generate_password_hash
 from db.db_dao import DB_DAO
 from PySide2.QtWidgets import *
-import time
 
 
 class FormRegister(FormRegisterView, QMainWindow):
@@ -16,7 +15,6 @@ class FormRegister(FormRegisterView, QMainWindow):
         self.ventana.registrar_bt.clicked.connect(self.register)
         self.ventana.back_bt.clicked.connect(self.back)
 
-
     def back(self):
         self.hide()
 
@@ -29,11 +27,10 @@ class FormRegister(FormRegisterView, QMainWindow):
             if not self.dao.existeUsuario(userName_entry):
                 self.dao.registrarUsuario([userName_entry, encrypted_password])
                 print("Se ha registrado el usuario")
-                self.ventana.registroOK_label.setText('Se ha registrado con exito')
+                self.ventana.registroOK_label.setText('Se ha registrado con éxito')
                 self.ventana.usuario_rgs.clear()
                 self.ventana.password_rgs.clear()
                 self.ventana.passwordConfir_rgs.clear()
-
                 self.hide()
         self.ventana.registroOK_label.setText(' ')
 
@@ -43,12 +40,11 @@ class FormRegister(FormRegisterView, QMainWindow):
         password_entry = self.ventana.password_rgs.text()
         passwordConfir_entry = self.ventana.passwordConfir_rgs.text()
 
-        if (password_entry != passwordConfir_entry):
+        if password_entry != passwordConfir_entry:
             status = False
             self.ventana.passDiferente_incorrecto.setText('Las contraseñas no coinciden')
 
         return status
-
 
     def encriptarPassword(self, password_text):
         encrypted_pass = generate_password_hash(password_text, 'sha256')

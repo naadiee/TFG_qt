@@ -4,7 +4,6 @@ from db.db_dao import DB_DAO
 from forms.registrar.form_registation import FormRegister
 from masterPanel.main_panel import MainPanel
 from werkzeug.security import check_password_hash
-import time
 
 
 class FormLogin(FormLoginView, QMainWindow):
@@ -12,13 +11,12 @@ class FormLogin(FormLoginView, QMainWindow):
     def __init__(self):
         self.dao = DB_DAO()
         super().__init__()
-        self.ui = FormLoginView() #asignamos a la variable ui nuestra ventana
-        self.ui.setupUi(self) # la establecemos
+        self.ui = FormLoginView()  # asignamos a la variable ui nuestra ventana
+        self.ui.setupUi(self)  # la establecemos
         self.setWindowTitle("Login")
         self.ventana = FormRegister()
-       # self.panel = MainPanel()
 
-       # Acciones de los botones: Ininio sesion y registrar
+        #  Acciones de los botones Inicio, sesión y registrar
         self.ui.login_bt.clicked.connect(self.verificar)
         self.ui.registra_bt.clicked.connect(self.ventanaRegistrar)
 
@@ -30,22 +28,17 @@ class FormLogin(FormLoginView, QMainWindow):
 
         if self.correctUser(user_entry) and self.correctPassword(passw_entry, user_entry):
             self.panel = MainPanel(user_entry)
-            #self.panel.setUserName(user_entry)
             self.hide()
             self.panel.show()
-            #self.mainWindow()
-
         else:
             self.ui.contrasena_incorrecta.setText('Contraseña incorrecta')
             self.ui.usuario_incorrecto.setText('Usuario incorrecto')
-
 
     def correctUser(self, usuario):
         estado = True
 
         if not self.dao.existeUsuario(usuario):
             estado = False
-
         return estado
 
     def correctPassword(self, password, userName):
@@ -57,15 +50,5 @@ class FormLogin(FormLoginView, QMainWindow):
 
         return same
 
-    def progressBarview(self): # No terminado
-        for i in range(0,99):
-            time.sleep(0.02)
-            #self.ui.progressBar.setValue(i)
-            #self.ui.cargar_label.setText('Cargando...')
-
     def ventanaRegistrar(self):
-        #self.ventana = FormRegister()
         self.ventana.show()
-
-    #def mainWindow(self):
-     #   self.panel.show()

@@ -3,7 +3,7 @@ from PySide2 import QtWidgets
 from stockFunctions import data
 
 
-class Admin():
+class Admin:
 
     def __init__(self, panel):
         self.dao = DB_DAO()
@@ -14,12 +14,13 @@ class Admin():
             lambda: self.mainWindow.stackedWidget.setCurrentWidget(
                 self.mainWindow.page_admin))
 
+        # para que se seleccione la opción del combobox, aquella que se quede marcada
         self.mainWindow.comboBox_addIndex_admin.currentIndexChanged.connect(self.selectStockIndex)
-        #aceptarAddIndex_admin_bt_tab
+        # botones de aceptar para proceder
         self.mainWindow.delete_admin_bt.clicked.connect(self.deleteUser)
-        self.mainWindow.aactualizar_admin_bt.clicked.connect(self.mostrarUsuarios)
         self.mainWindow.aceptarAddIndex_admin_bt_tab.clicked.connect(self.saveData)
-
+        # botón de actualizar
+        self.mainWindow.aactualizar_admin_bt.clicked.connect(self.mostrarUsuarios)
 
     def selectStockIndex(self):
         indexSeleccion = self.mainWindow.comboBox_addIndex_admin.currentIndex()
@@ -27,13 +28,11 @@ class Admin():
 
         return [indexSeleccion, seleeccion]
 
-
-
     def saveData(self):
         index, asset = self.selectStockIndex()
         registroActivos = [0, 0, 0, 0, 0, 0, 0]
         # TODO
-        if index > 0: # else: muestra mensaje de error "No se ha seleccionado nada"
+        if index > 0:  # else: muestra mensaje de error "No se ha seleccionado nada"
 
             if self.mainWindow.unoMin_box.isChecked():
                 data.guardarDatos(asset, '1min')
@@ -81,9 +80,6 @@ class Admin():
         self.mainWindow.sesentaMin_box.setChecked(False)
         self.mainWindow.daily_box.setChecked(False)
 
-
-    # unoMin_box cincoMin_box quinceMin_box treintaMin_box
-    # cuarentacincoMin_box sesentaMin_box  daily_box
     def mostrarUsuarios(self):
         datos = self.dao.mostrarUsuarios()
         totalusers = len(datos)
@@ -102,4 +98,3 @@ class Admin():
             nombre_usr = self.mainWindow.tableWidget.item(self.fila_seleccionada, 0).text()
             self.mainWindow.tableWidget.removeRow(self.fila_seleccionada)
             self.dao.deleteUser(nombre_usr)
-
