@@ -5,6 +5,10 @@ from stockFunctions.trading import Trading
 from datetime import datetime
 import numpy as np
 import pandas as pd
+from PySide2 import QtWidgets
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 class TradingPanel():
 
     def __init__(self, panel, userName):
@@ -101,25 +105,30 @@ class TradingPanel():
         self.mainWindow.ventanas_trading.setCurrentWidget(self.mainWindow.page_resultados)
         asset = self.getAsset()
         timeFrame = self.getTimeFrame()
-        print(asset)
-        print(timeFrame)
         fecha = self.getFecha()
         year = fecha.year
         month = fecha.month
-        #print(type(year))
-        #print(year)
-        #print(type(month))
-        #print(month)
-        #print(self.getFecha())
-        #print(self.getSbxTiempoExposicion())
-        #print(self.getSbxCantidadPosicion())
         cantidad = self.getSbxCantidadPosicion()
 
         df = self.getAssetDataIntraday(timeFrame)
         df_technicalData = analisisTecnico.getDatosTecnicos(df)
+        df_month = analisisTecnico.getMonthCandlestick(df, year, month)
         entradas = analisisTecnico.posiblesEntradas(df_technicalData)
-        #analisisTecnico.tradingResults(entradas, year, month)
-        self.trading.tradingResults(entradas, year, month, asset, cantidad)
+        lista_datos = self.trading.tradingResults(df_month,entradas, year, month, asset, cantidad)
+        self.mainWindow.tableWidget_3.setRowCount(len(lista_datos))
+        filaTabla = 0
+
+        for tupla in lista_datos:
+
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 0, QtWidgets.QTableWidgetItem(str(tupla[0])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 1, QtWidgets.QTableWidgetItem(str(tupla[1])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 2, QtWidgets.QTableWidgetItem(str(tupla[2])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 3, QtWidgets.QTableWidgetItem(str(tupla[3])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 4, QtWidgets.QTableWidgetItem(str(tupla[4])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 5, QtWidgets.QTableWidgetItem(str(tupla[5])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 6, QtWidgets.QTableWidgetItem(str(tupla[6])))
+            self.mainWindow.tableWidget_3.setItem(filaTabla, 7, QtWidgets.QTableWidgetItem(tupla[7]))
+            filaTabla += 1
 
     def getResults(self):
         #obtenemos los datos la analisisTecnico.py pero antes se leen en data.py

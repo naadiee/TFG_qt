@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowadiktG.ui'
+## Form generated from reading UI file 'main_windowbYoarq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -940,34 +940,6 @@ class MainPanelView(object):
         self.ventanas_trading.addWidget(self.page_solicitarDatos)
         self.page_resultados = QWidget()
         self.page_resultados.setObjectName(u"page_resultados")
-        self.widget_34 = QWidget(self.page_resultados)
-        self.widget_34.setObjectName(u"widget_34")
-        self.widget_34.setGeometry(QRect(210, 20, 461, 51))
-        self.widget_34.setMinimumSize(QSize(461, 51))
-        self.widget_34.setMaximumSize(QSize(461, 51))
-        self.horizontalLayout_41 = QHBoxLayout(self.widget_34)
-        self.horizontalLayout_41.setObjectName(u"horizontalLayout_41")
-        self.horizontalSpacer_54 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontalLayout_41.addItem(self.horizontalSpacer_54)
-
-        self.label_22 = QLabel(self.widget_34)
-        self.label_22.setObjectName(u"label_22")
-        self.label_22.setMinimumSize(QSize(230, 31))
-        self.label_22.setMaximumSize(QSize(230, 31))
-        self.label_22.setFont(font1)
-        self.label_22.setStyleSheet(u"color: rgb(77, 125, 238);\n"
-"font: 75 26pt \"Arial\";\n"
-"border:Noe\n"
-"")
-        self.label_22.setAlignment(Qt.AlignCenter)
-
-        self.horizontalLayout_41.addWidget(self.label_22)
-
-        self.horizontalSpacer_55 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontalLayout_41.addItem(self.horizontalSpacer_55)
-
         self.back_resultadosTrading_bt = QPushButton(self.page_resultados)
         self.back_resultadosTrading_bt.setObjectName(u"back_resultadosTrading_bt")
         self.back_resultadosTrading_bt.setGeometry(QRect(20, 30, 41, 35))
@@ -982,6 +954,80 @@ class MainPanelView(object):
         icon8.addFile(u"img/atras.png", QSize(), QIcon.Normal, QIcon.Off)
         self.back_resultadosTrading_bt.setIcon(icon8)
         self.back_resultadosTrading_bt.setIconSize(QSize(30, 30))
+        self.frame_11 = QFrame(self.page_resultados)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setGeometry(QRect(120, 20, 821, 561))
+        self.frame_11.setMinimumSize(QSize(471, 481))
+        self.frame_11.setSizeIncrement(QSize(471, 481))
+        self.frame_11.setFrameShape(QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_13 = QVBoxLayout(self.frame_11)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.widget_36 = QWidget(self.frame_11)
+        self.widget_36.setObjectName(u"widget_36")
+        self.widget_36.setMinimumSize(QSize(800, 51))
+        self.widget_36.setMaximumSize(QSize(461, 51))
+        self.horizontalLayout_42 = QHBoxLayout(self.widget_36)
+        self.horizontalLayout_42.setObjectName(u"horizontalLayout_42")
+        self.horizontalSpacer_56 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_42.addItem(self.horizontalSpacer_56)
+
+        self.label_23 = QLabel(self.widget_36)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setMinimumSize(QSize(215, 31))
+        self.label_23.setMaximumSize(QSize(215, 31))
+        self.label_23.setFont(font1)
+        self.label_23.setStyleSheet(u"color: rgb(77, 125, 238);\n"
+"font: 75 26pt \"Arial\";\n"
+"border:Noe\n"
+"")
+        self.label_23.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_42.addWidget(self.label_23)
+
+        self.horizontalSpacer_57 = QSpacerItem(127, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_42.addItem(self.horizontalSpacer_57)
+
+
+        self.verticalLayout_13.addWidget(self.widget_36)
+
+        self.tableWidget_3 = QTableWidget(self.frame_11)
+        if (self.tableWidget_3.columnCount() < 8):
+            self.tableWidget_3.setColumnCount(8)
+        __qtablewidgetitem = QTableWidgetItem()
+        __qtablewidgetitem.setBackground(QColor(88, 153, 79));
+        self.tableWidget_3.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        __qtablewidgetitem1.setBackground(QColor(88, 153, 79));
+        self.tableWidget_3.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        __qtablewidgetitem2.setBackground(QColor(88, 153, 79));
+        self.tableWidget_3.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        __qtablewidgetitem3.setBackground(QColor(88, 153, 79));
+        self.tableWidget_3.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        __qtablewidgetitem4.setBackground(QColor(196, 0, 14));
+        self.tableWidget_3.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        __qtablewidgetitem6 = QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(6, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(7, __qtablewidgetitem7)
+        self.tableWidget_3.setObjectName(u"tableWidget_3")
+        self.tableWidget_3.setMinimumSize(QSize(0, 0))
+        self.tableWidget_3.setMaximumSize(QSize(800, 16777215))
+        self.tableWidget_3.setStyleSheet(u"\n"
+"	color: rgb(0, 0, 0);\n"
+"	background: rgba(87, 129, 255, 159);\n"
+"    \n"
+"	font: 12px \"Arial\";")
+
+        self.verticalLayout_13.addWidget(self.tableWidget_3)
+
         self.ventanas_trading.addWidget(self.page_resultados)
 
         self.horizontalLayout_7.addWidget(self.ventanas_trading)
@@ -991,7 +1037,7 @@ class MainPanelView(object):
         self.page_historial.setObjectName(u"page_historial")
         self.frame_10 = QFrame(self.page_historial)
         self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setGeometry(QRect(255, 9, 681, 491))
+        self.frame_10.setGeometry(QRect(390, 50, 541, 491))
         self.frame_10.setMinimumSize(QSize(471, 481))
         self.frame_10.setSizeIncrement(QSize(471, 481))
         self.frame_10.setFrameShape(QFrame.StyledPanel)
@@ -1028,28 +1074,27 @@ class MainPanelView(object):
 
         self.verticalLayout_12.addWidget(self.widget_35)
 
-        self.verticalSpacer_20 = QSpacerItem(20, 45, QSizePolicy.Minimum, QSizePolicy.Preferred)
-
-        self.verticalLayout_12.addItem(self.verticalSpacer_20)
-
         self.tableWidget_2 = QTableWidget(self.frame_10)
         if (self.tableWidget_2.columnCount() < 5):
             self.tableWidget_2.setColumnCount(5)
-        __qtablewidgetitem = QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        self.tableWidget_2.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(0, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(1, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(2, __qtablewidgetitem10)
+        __qtablewidgetitem11 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(3, __qtablewidgetitem11)
+        __qtablewidgetitem12 = QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(4, __qtablewidgetitem12)
         self.tableWidget_2.setObjectName(u"tableWidget_2")
-        self.tableWidget_2.setMinimumSize(QSize(600, 0))
-        self.tableWidget_2.setMaximumSize(QSize(600, 16777215))
+        sizePolicy.setHeightForWidth(self.tableWidget_2.sizePolicy().hasHeightForWidth())
+        self.tableWidget_2.setSizePolicy(sizePolicy)
+        self.tableWidget_2.setMinimumSize(QSize(550, 0))
+        self.tableWidget_2.setMaximumSize(QSize(500, 16777215))
         self.tableWidget_2.setStyleSheet(u"	color: rgb(0, 0, 0);\n"
-"	border-radius:10px;\n"
+"	background: rgba(87, 129, 255, 159);\n"
+"    \n"
 "	font: 15px \"Arial\";")
 
         self.verticalLayout_12.addWidget(self.tableWidget_2)
@@ -3004,8 +3049,8 @@ class MainPanelView(object):
         self.tableWidget = QTableWidget(self.frame_9)
         if (self.tableWidget.columnCount() < 1):
             self.tableWidget.setColumnCount(1)
-        __qtablewidgetitem5 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem5)
+        __qtablewidgetitem13 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem13)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(450, 0))
         self.tableWidget.setMaximumSize(QSize(450, 16777215))
@@ -3185,7 +3230,7 @@ class MainPanelView(object):
 
         self.comboBox_selectIndix_trading.setCurrentIndex(0)
         self.comboBox_selectTimeFrame.setCurrentIndex(0)
-        self.tabWidget_perfil.setCurrentIndex(0)
+        self.tabWidget_perfil.setCurrentIndex(2)
         self.tabWidget.setCurrentIndex(1)
         self.comboBox_addIndex_admin.setCurrentIndex(0)
 
@@ -3231,19 +3276,35 @@ class MainPanelView(object):
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Modificar saldo:", None))
         self.spinBox_cantidadPosicion_trading.setSuffix("")
         self.aceptarDatos_trading_bt.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Resultados", None))
         self.back_resultadosTrading_bt.setText("")
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Resultados", None))
+        ___qtablewidgetitem = self.tableWidget_3.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Compra 1", None));
+        ___qtablewidgetitem1 = self.tableWidget_3.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Compra 2", None));
+        ___qtablewidgetitem2 = self.tableWidget_3.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Compra 3", None));
+        ___qtablewidgetitem3 = self.tableWidget_3.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Compra 4", None));
+        ___qtablewidgetitem4 = self.tableWidget_3.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Precio venta", None));
+        ___qtablewidgetitem5 = self.tableWidget_3.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Precio promedio", None));
+        ___qtablewidgetitem6 = self.tableWidget_3.horizontalHeaderItem(6)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Saldo final", None));
+        ___qtablewidgetitem7 = self.tableWidget_3.horizontalHeaderItem(7)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"Historial", None))
-        ___qtablewidgetitem = self.tableWidget_2.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
-        ___qtablewidgetitem1 = self.tableWidget_2.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Activo", None));
-        ___qtablewidgetitem2 = self.tableWidget_2.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Precio", None));
-        ___qtablewidgetitem3 = self.tableWidget_2.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Cantidad", None));
-        ___qtablewidgetitem4 = self.tableWidget_2.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
+        ___qtablewidgetitem8 = self.tableWidget_2.horizontalHeaderItem(0)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
+        ___qtablewidgetitem9 = self.tableWidget_2.horizontalHeaderItem(1)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Activo", None));
+        ___qtablewidgetitem10 = self.tableWidget_2.horizontalHeaderItem(2)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Precio", None));
+        ___qtablewidgetitem11 = self.tableWidget_2.horizontalHeaderItem(3)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Cantidad", None));
+        ___qtablewidgetitem12 = self.tableWidget_2.horizontalHeaderItem(4)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Fecha", None));
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"### RSI (Relative Strenght Index): \n"
 "Indicador de tipo oscilador que refleja la fuerza relativa de los movimientos alcista en comparaci\u00f3n de los movimientos bajistas. \n"
 "Es un indicador que muestra los niveles de sobrecompra y los niveles de sobreventa: \n"
@@ -3324,8 +3385,8 @@ class MainPanelView(object):
         self.aceptarAddIndex_admin_bt_tab.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.add_index_admin_tab), QCoreApplication.translate("MainWindow", u"Agregar indice", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Eliminar  usuarios", None))
-        ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
+        ___qtablewidgetitem13 = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
         self.aactualizar_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Actualizar", None))
         self.delete_admin_bt.setText(QCoreApplication.translate("MainWindow", u"Elimnar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.usr_ajustes_admin_tab), QCoreApplication.translate("MainWindow", u"Usuarios", None))

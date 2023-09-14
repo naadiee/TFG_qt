@@ -160,7 +160,7 @@ def fullIntradayData2(twoYearArr):
 def readDailyData(asset):
     daily = pd.read_csv('data/' + asset + '_daily.csv', index_col=False)
     daily = daily.drop(['4. close', '7. dividend amount', '8. split coefficient'], axis=1)  # eliminar columnas que no sirven
-    daily = daily.rename(columns={'1. open': 'Open', '2. high': 'High', '3. low': 'Low', '5. adjusted close': 'Close', '6. volume': 'Volume'})  # cambiamos nombres de la columna normalizamos
+    daily = daily.rename(columns={'1. open': 'Open', '2. high': 'High', '3. low': 'Low', '5. adjusted close': 'Close', '6. volume': 'Volume'})
     daily = daily.set_index('date')  # cambiamos el indice a date
     daily_aux = daily.reindex(index=daily.index[::-1])  # invertir dataframe pasar de [1-300] a [300-1] primero datos antiguos últimos los nuevos
 

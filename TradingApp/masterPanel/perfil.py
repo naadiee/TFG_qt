@@ -65,7 +65,7 @@ class Perfil:
         confirm_pass = self.mainWindow.passwordConfirmDelete_tab.text()
 
         if self.dao.correct_password(confirm_pass, self.user_id):
-            if self.mainWindow.delete_box.isChecked():  # cambiar nombre del combobox
+            if self.mainWindow.delete_box.isChecked():
                 self.dao.deleteUser(self.user_id)
                 print("Se ha eliminado la cuenta con éxito")
                 self.mainWindow.passwordConfirmDelete_tab.clear()
